@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fcfcfc;
+    color: #444444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+a{text-decoration: none !important;}
+
+p{margin-bottom: 0px !important;}
+
+li{list-style: none !important;}
+
+/* Font Sizes */
+
+.fs-5{font-size: 5px !important;}
+
+.fs-6{font-size: 6px !important;}
+
+.fs-8{font-size: 8px !important;}
+
+.fs-9{font-size: 9px !important;}
+
+.fs-10{font-size: 10px !important;}
+
+.fs-11{font-size: 11px !important;}
+
+.fs-12{font-size: 12px !important;}
+
+.fs-13{font-size: 13px !important;}
+
+.fs-14{font-size: 14px !important;}
+
+.fs-15{font-size: 15px !important;}
+
+.fs-16{font-size: 16px !important;}
+
+.fs-17{font-size: 17px !important;}
+
+.fs-18{font-size: 18px !important;}
+
+.fs-20{font-size: 20px !important;}
+
+.fs-21{font-size: 21px !important;}
+
+.fs-22{font-size: 22px !important;}
+
+.fs-24{font-size: 24px !important;}
+
+.fs-26{font-size: 26px !important;}
+
+.fs-28{font-size: 28px !important;}
+
+.fs-30{font-size: 30px !important;}
+
+.fs-32{font-size: 32px !important;}
+
+.fs-36{font-size: 36px !important;}
+
+.fs-40{font-size: 40px !important;}
+
+/* Font Weights */
+
+.fw-300{font-weight: 300 !important;}
+
+.fw-350{font-weight: 350 !important;}
+
+.fw-400{font-weight: 400 !important;}
+
+.fw-450{font-weight: 450 !important;}
+
+.fw-500{font-weight: 500 !important;}
+
+.fw-550{font-weight: 550 !important;}
+
+.fw-600{font-weight: 600 !important;}
+
+.fw-650{font-weight: 650 !important;}
+
+.fw-700{font-weight: 700 !important;}
+
+.fw-750{font-weight: 750 !important;}
+
+.fw-800{font-weight: 800 !important;}
+
+/* Line Heights */
+
+.lh-8{line-height: 8px !important;}
+
+.lh-9{line-height: 9px !important;}
+
+.lh-10{line-height: 10px !important;}
+
+.lh-11{line-height: 11px !important;}
+
+.lh-12{line-height: 12px !important;}
+
+.lh-13{line-height: 13px !important;}
+
+.lh-14{line-height: 14px !important;}
+
+.lh-15{line-height: 15px !important;}
+
+.lh-16{line-height: 16px !important;}
+
+.lh-17{line-height: 17px !important;}
+
+.lh-18{line-height:18px !important;}
+
+.lh-19{line-height:19px !important;}
+
+.lh-20{line-height: 20px !important;}
+
+.lh-21{line-height: 21px !important;}
+
+.lh-22{line-height: 22px !important;}
+
+.lh-23{line-height: 23px !important;}
+
+.lh-24{line-height: 24px !important;}
+
+.lh-25{line-height: 25px !important;}
+
+.lh-26{line-height: 26px !important;}
+
+.lh-27{line-height: 27px !important;}
+
+.lh-28{line-height: 28px !important;}
+
+.lh-29{line-height: 29px !important;}
+
+.lh-30{line-height: 30px !important;}
+
+.lh-32{line-height: 32px !important;}
+
+/* Letter Spaces */
+
+.ls-1{letter-spacing: 1px !important;}
+
+.ls-2{letter-spacing: 2px !important;}
+
+/* Opacity */
+
+.op-0{opacity: 0 !important;}
+
+.op-10{opacity: 0.1 !important;}
+
+.op-20{opacity: 0.2 !important;}
+
+.op-30{opacity: 0.3 !important;}
+
+.op-40{opacity: 0.4 !important;}
+
+.op-50{opacity: 0.5 !important;}
+
+.op-60{opacity: 0.6 !important;}
+
+.op-70{opacity: 0.7 !important;}
+
+.op-80{opacity: 0.8 !important;}
+
+.op-90{opacity: 0.9 !important;}
+
+/* Border Radius */
+
+.br-0{border-radius: 0px !important;}
+
+.br-2{border-radius: 2px !important;}
+
+.br-3{border-radius: 3px !important;}
+
+.br-4{border-radius: 4px !important;}
+
+.br-5{border-radius: 5px !important;}
+
+.br-7{border-radius: 7px !important;}
+
+.br-8{border-radius: 8px !important;}
+
+.br-10{border-radius: 10px !important;}
+
+.br-12{border-radius: 12px !important;}
+
+.br-15{border-radius: 15px !important;}
+
+.br-20{border-radius: 20px !important;}
+
+.br-25{border-radius: 25px !important;}
+
+.br-50{border-radius: 50px !important;}
+
+.br-100{border-radius: 100px !important;}
+
+.br-200{border-radius: 200px !important;}
+
+/* Borders */
+
+.b0{border: none !important;}
+
+.b05{border: 0.5px solid !important;}
+
+.b1{border: 1px solid !important;}
+
+.b15{border: 1.5px solid !important;}
+
+.b05-t{border-top: 1px solid !important;}
+
+.b05-b{border-bottom: 1px solid !important;}
+
+.b05-l{border-left: 1px solid !important;}
+
+.b05-r{border-right: 1px solid !important;}
+
+.b1-t{border-top: 1px solid !important;}
+
+.b1-b{border-bottom: 1px solid !important;}
+
+.b1-l{border-left: 1px solid !important;}
+
+.b1-r{border-right: 1px solid !important;}
+
+.b1-dotted{border: 1px dotted !important;}
+
+/* Objects and Texts */
+
+.white-wrap{white-space: nowrap !important;}
+
+.text-ellipsis{text-overflow: ellipsis !important;}
+
+.text-capital{text-transform: capitalize !important;}
+
+.object-cover{object-fit: cover !important;}
+
+.object-contain{object-fit: contain !important;}
+
+.object-center{object-position: center !important;}
+
+.cursor-pointer{cursor: pointer !important;}
+
+/* Transistions */
+
+.trans-02{transition: all 0.2s;}
+
+.trans-03{transition: all 0.3s;}
+
+.trans-05{transition: all 0.5s;}
+
+.trans-07{transition: all 0.7s;}
+
+
+/* Form Control */
+
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+    color: rgba(var(--bs-body-color-rgb),.65);
+    transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+    font-weight: 350;
+}
+
+.form-control:focus, .form-select:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border: 0.5px solid #3454a4  !important;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem #3454a415  !important;
+}
+
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: light-dark(rgb(254, 241, 235), rgba(254, 241, 235, 0.4)) !important;
+    color: fieldtext !important;
+}
+
+.form-control, .form-select{
+    height: 40px;
+    font-size: 14px;
+    color: #252424;
+}
+
+/* Colors */
+
+.text-blue {color: #3454a4 !important;}
+
+.text-darkblue {color: #0c2a46 !important;}
+
+.text-red { color: #ff304d !important;}
