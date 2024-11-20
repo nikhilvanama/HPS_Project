@@ -1,0 +1,157 @@
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center p-2 bg-light width-05s">
+    <i class="bi bi-list toggle-sidebar-btn"></i>
+
+    <div class="pagetitle m-0 ms-4">
+        <h1 class="fs-18 fw-600 text-dark lh-24"> User Dashboard</h1>
+        <nav style="--bs-breadcrumb-divider: '•';">
+            <ol class="breadcrumb d-flex align-items-center m-0">
+              <li class="breadcrumb-item"><a href="index.html" class="fs-12 fw-400 text-grey2">Home</a></li>
+              <li class="breadcrumb-item fs-12 active">Dashboard</li>
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Search Bar -->
+    <div class="search-bar d-none">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <!-- MObile Search Icon -->
+        <li class="nav-item d-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="javascript:void(0)">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell text-dark"></i>
+            <span class="badge bg-orange badge-number fs-9 fw-350 py-1">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications py-1">
+            <li class="dropdown-header text-start fs-14 text-dark2 fw-400 d-flex justify-content-between align-items-center">
+              <span>You have 4 new notifications</span>
+              <a href="#"><span class="badge rounded-pill bg-orange p-2 ms-2 fw-300 width-max">View all</span></a>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item py-2">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4 class="fs-16 fw-550 mb-0 text-dark">Lorem Ipsum</h4>
+                <p class="text-dark2 fs-13 fw-400 one-line-only">Quae dolorem earum veritatis oditseno</p>
+                <p class="text-grey2 fs-12 fw-350">30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item py-2">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4 class="fs-16 fw-550 mb-0 text-dark">Atque rerum nesciunt</h4>
+                <p class="text-dark2 fs-13 fw-400 one-line-only">Quae dolorem earum veritatis oditseno</p>
+                <p class="text-grey2 fs-12 fw-350">1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item py-2">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4 class="fs-16 fw-550 mb-0 text-dark">Sit rerum fuga</h4>
+                <p class="text-dark2 fs-13 fw-400 one-line-only">Quae dolorem earum veritatis oditseno</p>
+                <p class="text-grey2 fs-12 fw-350">2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item py-2">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4 class="fs-16 fw-550 mb-0 text-dark">Dicta reprehenderit</h4>
+                <p class="text-dark2 fs-13 fw-400 one-line-only">Quae dolorem earum veritatis oditseno</p>
+                <p class="text-grey2 fs-12 fw-350">4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="../User/Login/notifications.html" class="text-dark2 w-100">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="../assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2 text-dark fw-500 fs-16">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header text-start">
+              <h6 class="text-dark fs-18 fw-600">Kevin Anderson</h6>
+              <span class="text-grey2">Operational Manager</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="../User/Login/profile.html">
+                <div class="icon pe-2 d-flex align-items-center">
+                  <img src="../assets/img/Dashboard/Profile-icon-b.svg" alt="profile" class="black-icon trans-03">
+                  <img src="../assets/img/Dashboard/Profile-icon-o.svg" alt="profile" class="orange-icon trans-03">
+                </div>
+                <span class="fs-15 fw-400 trans-03">My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="../Admin/Login/pavan-login.html">
+                <div class="icon pe-2 d-flex align-items-center">
+                  <img src="../assets/img/Dashboard/logout-icon-b.svg" alt="profile" class="black-icon trans-03">
+                  <img src="../assets/img/Dashboard/logout-icon-o.svg" alt="profile" class="orange-icon trans-03">
+                </div>                
+                <span class="fs-15 fw-400 trans-03">Log Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+  <script>
+    jQuery(".toggle-sidebar-btn").click(function(){
+      jQuery("body").toggleClass("toggle-sidebar")
+    })
+  </script>
