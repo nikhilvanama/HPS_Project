@@ -1,5 +1,5 @@
   <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar z-1000 bg-light d-flex flex-column justify-content-between pt-2 fadein-05s">
+  <aside id="sidebar" class="sidebar z-1000 bg-light d-flex flex-column justify-content-between pt-2 fadein-05s overflow-hidden">
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
@@ -7,42 +7,100 @@
         <a class="position-relative" href="../User/create-shipment.html">
           <div class="index-icon pe-2 d-flex align-items-center" style="height: 75px;">
             <img src="../assets/img/logo.png" alt="Home" width="100%" height="100%" class="main-icon trans-03 object-contain">
+            <img src="../assets/img/logo 1.png" alt="Home" width="60%" height="60%"  class="small-icon trans-03 object-contain">
           </div>            
         </a>
-      </li><!-- End Attendance Nav -->
+        <a href="javascript:void(0)" class="d-lg-none mobile-sideclose position-absolute" style="right: 20px; top:25px;">
+          <i class="fa-solid fa-xmark text-danger fs-20 "></i>
+        </a>
+      </li><!-- End Logo Nav -->
 
       <li class="nav-item mt-3">
-        <a class="nav-link d-flex align-items-center position-relative" href="../User/index.html">
+        <a class="nav-link d-flex align-items-center position-relative collapsed" href="javascript:void(0)">
           <div class="icon pe-2 d-flex align-items-center">
-            <img src="../assets/img/Dashboard/Dashboard-icon-b.svg" alt="Dashboard" class="black-icon trans-03">
-            <img src="../assets/img/Dashboard/Dashboard-icon-bo.svg" alt="Dashboard"  class="orange-icon trans-03">
+            <img src="../assets/img/req-icon-r-b.svg" alt="Requests" class="black-icon trans-03">
+            <img src="../assets/img/req-icon-s-b.svg" alt="Requests"  class="blue-icon trans-03">
+          </div>            
+          <span>Requests</span>
+          <span class="fs-12 text-blue bg-lightblue3 br-3 ms-auto me-2 px-1">100</span>
+        </a>
+      </li><!-- End Requests Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link d-flex align-items-center position-relative collapsed" href="javascript:void(0)">
+          <div class="icon pe-2 d-flex align-items-center">
+            <img src="../assets/img/not-icon-r-b.svg" alt="Notifications" class="black-icon trans-03">
+            <img src="../assets/img/not-icon-s-b.svg" alt="Notifications"  class="blue-icon trans-03">
+          </div>            
+          <span>Notifications</span>
+          <span class="fs-12 text-blue bg-lightblue3 br-3 ms-auto me-2 px-1">20</span>
+        </a>
+      </li><!-- End Notifications Nav -->
+
+      <li class="nav-item mt-5">
+        <a class="nav-link d-flex align-items-center position-relative" href="javascript:void(0)">
+          <div class="icon pe-2 d-flex align-items-center">
+            <img src="../assets/img/dashboard-icon-r-b.svg" alt="Dashboard" class="black-icon trans-03">
+            <img src="../assets/img/dashboard-icon-s-b.svg" alt="Dashboard"  class="blue-icon trans-03">
           </div>            
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
-    </ul>
-
-    <ul id="sidebar-nav" class="sidebar-nav">
       <li class="nav-item">
-        <a class="nav-link d-flex align-items-center position-relative collapsed" href="../User/Settings/settings.html">
+        <a class="nav-link d-flex align-items-center position-relative collapsed" href="javascript:void(0)">
           <div class="icon pe-2 d-flex align-items-center">
-            <img src="../assets/img/Dashboard/Settings-icon-b.svg" alt="Settings" class="black-icon trans-03">
-            <img src="../assets/img/Dashboard/Settings-icon-o.svg" alt="Settings"  class="orange-icon trans-03">
+            <img src="../assets/img/box-icon-r-b.svg" alt="Orders" class="black-icon trans-03">
+            <img src="../assets/img/box-icon-s-b.svg" alt="Orders"  class="blue-icon trans-03">
           </div>            
-          <span>Settings</span>
+          <span>Orders</span>
         </a>
-      </li><!-- End Settings Nav -->
+      </li><!-- End Orders Nav -->
 
       <li class="nav-item">
-        <a class="nav-link d-flex align-items-center position-relative collapsed" href="../Admin/Login/login.html">
+        <a class="nav-link d-flex align-items-center position-relative collapsed" href="javascript:void(0)">
           <div class="icon pe-2 d-flex align-items-center">
-            <img src="../assets/img/Dashboard/logout-icon-b.svg" alt="Log Out" class="black-icon trans-03">
-            <img src="../assets/img/Dashboard/logout-icon-o.svg" alt="Log Out"  class="orange-icon trans-03">
+            <img src="../assets/img/track-icon-r-b.svg" alt="Tracking" class="black-icon trans-03">
+            <img src="../assets/img/track-icon-s-b.svg" alt="Tracking"  class="blue-icon trans-03">
           </div>            
-          <span>Log Out</span>
+          <span>Tracking</span>
         </a>
-      </li><!-- End Log Out Nav -->
+      </li><!-- End Tracking Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link d-flex align-items-center position-relative collapsed" href="javascript:void(0)">
+          <div class="icon pe-2 d-flex align-items-center">
+            <img src="../assets/img/clients-icon-r-b.svg" alt="Customers" class="black-icon trans-03">
+            <img src="../assets/img/clients-icon-s-b.svg" alt="Customers"  class="blue-icon trans-03">
+          </div>            
+          <span>Customers</span>
+        </a>
+      </li><!-- End Customers Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link d-flex align-items-center position-relative collapsed" href="javascript:void(0)">
+          <div class="icon pe-2 d-flex align-items-center">
+            <img src="../assets/img/ana-icon-r-b.svg" alt="Analysis" class="black-icon trans-03">
+            <img src="../assets/img/ana-icon-s-b.svg" alt="Analysis"  class="blue-icon trans-03">
+          </div>            
+          <span>Analysis</span>
+        </a>
+      </li><!-- End Analysis Nav -->
     </ul>
 
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item m-0">
+        <a href="javascript:void(0)" class="btn btn-darkblue fs-15 fw-350 w-100 create-shipment white-wrap" style="padding: 15px;"><i class="fa-solid fa-plus me-3"></i> <span>Create Shipment</span></a>
+      </li>
+
+      <li class="nav-item mt-2">
+        <a class="nav-link d-flex align-items-center position-relative collapsed" href="javascript:void(0)">
+          <div class="icon pe-2 d-flex align-items-center">
+            <img src="../assets/img/login-icon-r-b.svg" alt="Logout" class="black-icon trans-03">
+            <img src="../assets/img/login-icon-s-b.svg" alt="Logout"  class="blue-icon trans-03">
+          </div>    
+          <span>Logout</span>
+        </a>
+      </li><!-- End Logout Nav -->
+    </ul>
   </aside><!-- End Sidebar-->

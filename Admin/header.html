@@ -1,15 +1,20 @@
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center p-2 bg-light width-05s">
-    <i class="bi bi-list toggle-sidebar-btn"></i>
+  <header id="header" class="header d-flex align-items-center p-3 bg-light width-05s">
+    <div class="toggle-sidebar-btn d-none d-lg-flex justify-content-center align-items-center bg-lightblue3 br-20 p-0 position-absolute" style="height: 30px;width:30px; padding-left:2px;left:-15px;">
+      <i class="fa-solid fa-angle-left fs-15 text-darkblue trans-03"></i>
+      <i class="fa-solid fa-angle-right fs-15 text-darkblue trans-03"></i>
+    </div>
+
+    <i class="bi bi-list toggle-sidebar-btn d-lg-none" style="z-index: 1001;"></i>
 
     <div class="pagetitle m-0 ms-4">
-        <h1 class="fs-18 fw-600 text-dark lh-24"> User Dashboard</h1>
-        <nav style="--bs-breadcrumb-divider: '•';">
+        <h1 class="fs-22 fw-550 text-darkblue lh-24"> User Dashboard</h1>
+        <!-- <nav style="--bs-breadcrumb-divider: '•';">
             <ol class="breadcrumb d-flex align-items-center m-0">
               <li class="breadcrumb-item"><a href="index.html" class="fs-12 fw-400 text-grey2">Home</a></li>
               <li class="breadcrumb-item fs-12 active">Dashboard</li>
             </ol>
-        </nav>
+        </nav> -->
     </div><!-- End Page Title -->
 
     <!-- Search Bar -->
@@ -153,5 +158,10 @@
   <script>
     jQuery(".toggle-sidebar-btn").click(function(){
       jQuery("body").toggleClass("toggle-sidebar")
+    })
+    jQuery('.toggle-sidebar-btn').click(function () {
+      $('.toggle-sidebar .mobile-sideclose').click(function () {
+        $('body').removeClass('toggle-sidebar');
+      })
     })
   </script>
