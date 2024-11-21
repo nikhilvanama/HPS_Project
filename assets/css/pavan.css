@@ -125,3 +125,13 @@
         border-radius: 0px;
     }
 }
+
+/* ======================================== Tracking page ======================================== */
+
+.tracking main.tracking .section-tracking .icons .solid-icon, .tracking main.tracking .section-tracking .icons:hover .colored-icon{
+    display: none;
+ }
+ 
+ .tracking main.tracking .section-tracking .icons:hover .solid-icon {
+    display: block;
+ }
