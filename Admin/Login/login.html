@@ -54,11 +54,29 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+
+        /* For mobile phones: */
+        @media only screen and (max-width: 768px) {
+            .left-log {
+                height: auto !important;
+            }
+        }
+
+        .text-green1 {
+            color: rgba(0, 168, 65, 1) !important;
+        }
+
+        .forgot-pass2 .numbers input {
+            border-radius: 10px;
+            width: 14%;
+            margin-right: 15px;
+            height: 55px;
+        }
     </style>
 </head>
 
 <body class="login-form">
-    <section class="login-form overflow-hidden">
+    <section class="login-form overflow-x-hidden">
         <div class="row">
             <div class="col-md-6 left-log d-flex align-items-center justify-content-center" style="height: 100vh;">
                 <div style="height: 350px; width: 450px; background: transparent !important;"
@@ -89,7 +107,7 @@
                                 </a>
                                 <h3 class="mt-5 text-dark2">Hello..!</h3>
                                 <form action="#" method="post" class="w-100 need-focus">
-                                    <div class="login-form">
+                                    <div class="login-form-card">
                                         <h6 class="mb-3 fs-16 fw-450 text-dark2">Please Login to Your Account</h6>
                                         <div class="col-md-12 position-relative">
                                             <label for="mail" class="fs-12 fw-300 text-grey3">Email
@@ -98,8 +116,8 @@
                                         </div>
                                         <div class="col-md-12 position-relative mt-4">
                                             <label for="sender-phn" class="fs-12 fw-300 text-grey3">Password</label>
-                                            <input type="password" class="form-control" id="sender-phn" name="sender-phn"
-                                                required>
+                                            <input type="password" class="form-control" id="sender-phn"
+                                                name="sender-phn" required>
                                         </div>
                                         <div class="my-3 d-flex justify-content-end align-items-center">
                                             <a href="../Admin/Login/Forgot-pass.html" class="text-body text-dark2">
@@ -111,16 +129,89 @@
                                         </div>
                                         <div class=" my-4">
                                             <a href="javascript:void(0)" class="btn b05 bc-grey3 w-100 fs-14"><img
-                                                    src="../assets/img/Google.svg" alt="google" width="18px" class="me-2">Login
+                                                    src="../assets/img/Google.svg" alt="google" width="18px"
+                                                    class="me-2">Login
                                                 Login with Google</a>
                                         </div>
                                     </div>
-                                    <div class="forgot-pass1">
-                                        
-                                    </div>
+                                    <!-- <div class="forgot-pass1">
+                                        <h6 class="mb-3 fs-14 lh-20 fw-350 text-grey2">Enter your email for the
+                                            verification proccess,we will send 4 digits code to your email.</h6>
+                                            <div class="col-md-12 position-relative">
+                                                <label for="mail" class="fs-12 fw-300 text-grey3">Email
+                                                    Address</label>
+                                                <input type="mail" class="form-control" id="mail" name="mail" required>
+                                            </div>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-darkblue w-100 fs-14 mt-3">Continue</a>
+                                        </div>
+                                        <p class="fs-13 text-dark2 fw-350 mt-3">Password Reset Link has been Sent to
+                                            Your Email !
+                                            <span class="fs-13 text-green1 fadein-05s ms-2 white-wrap">Sent<i
+                                                    class="fa-solid fa-thumbs-up ms-1"></i></span>
+                                        </p>
+                                    </div> -->
+                                    <!-- <div class="forgot-pass2">
+                                        <h6 class="mb-3 fs-14 lh-20 fw-350 text-grey2">Enter your 4 Digit Code that you
+                                            received on your email.</h6>
+                                        <div class="numbers mb-3 d-flex justify-content-center flex-wrap">
+                                            <input type="tel" name="number1" class="form-control py-1 fs-20 fw-400"
+                                                min="0" max="9" required>
+                                            <input type="tel" name="number2" class="form-control py-1 fs-20 fw-400"
+                                                min="0" max="9" required>
+                                            <input type="tel" name="number3" class="form-control py-1 fs-20 fw-400"
+                                                min="0" max="9" required>
+                                            <input type="tel" name="number4" class="form-control py-1 fs-20 fw-400"
+                                                min="0" max="9" required>
+                                        </div>
+                                        <div class="otptimmer mb-3 d-flex flex-wrap justify-content-center text-green1">
+                                            <p id="timer">02:30</p>
+                                        </div>
+                                        <div class="submit py-1 my-3 w-100">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-darkblue w-100 fs-14 mt-3">Continue</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="fs-13 text-dark2 me-2">If you didn’t receive a code!
+                                                <a href="javascript:void(0)" class="fs-13 text-orange"> <span>
+                                                        Resend</span> </a>
+                                            </p>
+                                            <span class="fs-13 text-green1 fadein-05s">Sent<i
+                                                    class="fa-solid fa-thumbs-up ms-1"></i></span>
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="forgot-pass3">
+                                        <h6 class="mb-3 fs-14 lh-20 fw-350 text-grey2">Set the new password for your
+                                            account so you can login and access all featuress.</h6>
+                                        <div class="form-group mb-3">
+                                            <label for="currentpassword" class="fs-16 fw-400 text-dark pb-2">Current
+                                                Password</label>
+                                            <input type="password" class="form-control py-2 fs-15 fw-350"
+                                                id="currentpassword" placeholder="Enter your Current Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="newpassword" class="fs-16 fw-400 text-dark pb-2">New
+                                                Password</label>
+                                            <input type="password" class="form-control py-2 fs-15 fw-350"
+                                                id="newpassword" placeholder="Enter your New Password">
+                                        </div>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-darkblue w-100 fs-14 mt-3">Continue</a>
+                                        </div>
+                                    </div> -->
                                 </form>
                             </div>
                         </div>
+                        <!-- <div class="card w-100">
+                            <div class="card-body pt-3 d-flex flex-column justify-content-center align-items-center">
+                                <img src="../assets/img/upload.svg" alt="Succesful" class="py-4 fadein-1s">
+                                <p class="text-center fw-450 text-dark" style="font-size: 36px;">Successfully</p>
+                                <h6 class="mb-3 fs-14 lh-20 fw-350 text-grey2">Your password has been reset successfully</h6>
+                                <a href="javascript:void(0)" class="btn btn-darkblue w-100 fs-14 mt-3">Continue</a>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -153,6 +244,43 @@
             },
         });
 
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            let timerElement = document.getElementById('timer');
+            let timeRemaining = 150; // 2 minutes and 30 seconds = 150 seconds
+
+            function updateTimer() {
+                let minutes = Math.floor(timeRemaining / 60);
+                let seconds = timeRemaining % 60;
+
+                if (seconds < 10) {
+                    seconds = '0' + seconds;
+                }
+
+                timerElement.textContent = `0${minutes}:${seconds}`;
+
+                // Change color based on time remaining
+                if (timeRemaining <= 30) {
+                    timerElement.classList.add('red');
+                    timerElement.classList.remove('orange');
+                } else if (timeRemaining <= 60) {
+                    timerElement.classList.add('orange');
+                    timerElement.classList.remove('red');
+                } else {
+                    timerElement.classList.remove('orange', 'red');
+                }
+
+                if (timeRemaining > 0) {
+                    timeRemaining--;
+                } else {
+                    clearInterval(timerInterval);
+                    // Add any additional action when the timer reaches 00:00
+                }
+            }
+
+            let timerInterval = setInterval(updateTimer, 1000);
+        });
     </script>
 </body>
 
