@@ -31,15 +31,23 @@
 /* Form Label Transform */
 
 .login-form section.login-form .login-form-card label,
-.login-form section.login-form .forgot-pass1 label {
+.login-form section.login-form .forgot-pass1 label,
+.login-form section.login-form .forgot-pass3 label {
     position: absolute;
     top: auto;
     left: 30px;
     bottom: 13px;
-    transform: translateY(1px);
+    transform: translateY(0px), translateX(-5px);
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.login-form section.login-form .login-form-card .form-control,
+.login-form section.login-form .forgot-pass1 .form-control,
+.login-form section.login-form .forgot-pass3 .form-control {
+    height: 45px;
+    font-weight: 350;
+    border-radius: 3px;
+}
 
 /* OTP ENtry Page */
 

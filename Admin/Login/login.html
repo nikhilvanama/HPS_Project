@@ -46,14 +46,13 @@
     <!-- <link href="../assets/css/pavan.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
-    <link rel="stylesheet" href="../assets/css/shipment.css">
     <link href="../assets/css/pavan.css" rel="stylesheet">
     <style>
-        .left-log {
+        /*.left-log {
             background: url('../assets/img/login bag.svg');
             background-size: cover;
             background-repeat: no-repeat;
-        }
+        }*/
 
         /* For mobile phones: */
         @media only screen and (max-width: 768px) {
@@ -78,7 +77,7 @@
 <body class="login-form">
     <section class="login-form overflow-x-hidden">
         <div class="row">
-            <div class="col-md-6 left-log d-flex align-items-center justify-content-center" style="height: 100vh;">
+            <div class="col-md-6 left-log d-flex align-items-center justify-content-center bg-lightblue3" style="height: 100vh;">
                 <div style="height: 350px; width: 450px; background: transparent !important;"
                     class="d-flex align-items-center justify-content-center">
                     <div class="swiper mySwiper">
@@ -107,15 +106,15 @@
                                 </a>
                                 <h3 class="mt-5 text-dark2">Hello..!</h3>
                                 <form action="#" method="post" class="w-100 need-focus">
-                                    <div class="login-form-card">
-                                        <h6 class="mb-3 fs-16 fw-450 text-dark2">Please Login to Your Account</h6>
+                                    <div class="login-form-card -none">
+                                        <h6 class="mb-4 fs-18 fw-450 text-dark2">Please Login to Your Account</h6>
                                         <div class="col-md-12 position-relative">
-                                            <label for="mail" class="fs-12 fw-300 text-grey3">Email
+                                            <label for="mail" class="fs-15 fw-300 text-grey3">Email
                                                 Address</label>
                                             <input type="mail" class="form-control" id="mail" name="mail" required>
                                         </div>
                                         <div class="col-md-12 position-relative mt-4">
-                                            <label for="sender-phn" class="fs-12 fw-300 text-grey3">Password</label>
+                                            <label for="sender-phn" class="fs-15 fw-300 text-grey3">Password</label>
                                             <input type="password" class="form-control" id="sender-phn"
                                                 name="sender-phn" required>
                                         </div>
@@ -125,34 +124,34 @@
                                             </a>
                                         </div>
                                         <div class="">
-                                            <a href="javascript:void(0)" class="btn btn-darkblue w-100 fs-14">Login</a>
+                                            <a href="javascript:void(0)" class="btn btn-darkblue w-100 fs-15 py-2">Login</a>
                                         </div>
                                         <div class=" my-4">
-                                            <a href="javascript:void(0)" class="btn b05 bc-grey3 w-100 fs-14"><img
+                                            <a href="javascript:void(0)" class="btn b05 bc-grey3 w-100 fs-14 py-2"><img
                                                     src="../assets/img/Google.svg" alt="google" width="18px"
                                                     class="me-2">Login
                                                 Login with Google</a>
                                         </div>
                                     </div>
-                                    <div class="forgot-pass1">
-                                        <h6 class="mb-3 fs-14 lh-20 fw-350 text-grey2">Enter your email for the
+                                    <div class="forgot-pass1 d-none">
+                                        <h6 class="mb-4 fs-14 lh-20 fw-350 text-grey2">Enter your email for the
                                             verification proccess,we will send 4 digits code to your email.</h6>
                                             <div class="col-md-12 position-relative">
-                                                <label for="mail" class="fs-12 fw-300 text-grey3">Email
+                                                <label for="mail" class="fs-15 fw-300 text-grey3">Email
                                                     Address</label>
                                                 <input type="mail" class="form-control" id="mail" name="mail" required>
                                             </div>
                                         <div class="">
                                             <a href="javascript:void(0)"
-                                                class="btn btn-darkblue w-100 fs-14 mt-3">Continue</a>
+                                                class="btn btn-darkblue w-100 fs-14 mt-4 py-2">Continue</a>
                                         </div>
-                                        <p class="fs-13 text-dark2 fw-350 mt-3">Password Reset Link has been Sent to
+                                        <p class="fs-13 text-dark2 fw-350 mt-4">Password Reset Link has been Sent to
                                             Your Email !
                                             <span class="fs-13 text-green1 fadein-05s ms-2 white-wrap">Sent<i
                                                     class="fa-solid fa-thumbs-up ms-1"></i></span>
                                         </p>
                                     </div>
-                                    <div class="forgot-pass2">
+                                    <div class="forgot-pass2 d-none">
                                         <h6 class="mb-3 fs-14 lh-20 fw-350 text-grey2">Enter your 4 Digit Code that you
                                             received on your email.</h6>
                                         <div class="numbers mb-3 d-flex justify-content-center flex-wrap">
@@ -170,7 +169,7 @@
                                         </div>
                                         <div class="submit py-1 my-3 w-100">
                                             <a href="javascript:void(0)"
-                                                class="btn btn-darkblue w-100 fs-14 mt-3">Continue</a>
+                                                class="btn btn-darkblue w-100 fs-14 mt-3 py-2">Continue</a>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <p class="fs-13 text-dark2 me-2">If you didn’t receive a code!
@@ -181,24 +180,24 @@
                                                     class="fa-solid fa-thumbs-up ms-1"></i></span>
                                         </div>
                                     </div>
-                                    <div class="forgot-pass3">
+                                    <div class="forgot-pass3 d-none">
                                         <h6 class="mb-3 fs-14 lh-20 fw-350 text-grey2">Set the new password for your
                                             account so you can login and access all featuress.</h6>
-                                        <div class="form-group mb-3">
-                                            <label for="currentpassword" class="fs-16 fw-400 text-dark pb-2">Current
-                                                Password</label>
-                                            <input type="password" class="form-control py-2 fs-15 fw-350"
-                                                id="currentpassword" placeholder="Enter your Current Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="newpassword" class="fs-16 fw-400 text-dark pb-2">New
-                                                Password</label>
-                                            <input type="password" class="form-control py-2 fs-15 fw-350"
-                                                id="newpassword" placeholder="Enter your New Password">
-                                        </div>
-                                        <div class="">
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-darkblue w-100 fs-14 mt-3">Continue</a>
+                                            <div class="col-md-12 position-relative mt-4">
+                                                <label for="currpassword" class="fs-15 fw-300 text-grey3">Current Password</label>
+                                                <input type="password" class="form-control" id="currpassword"
+                                                    name="currpassword" required>
+                                            </div>
+                                            <div class="col-md-12 position-relative mt-4">
+                                                <label for="newpassword" class="fs-15 fw-300 text-grey3">New Password</label>
+                                                <input type="password" class="form-control" id="newpassword"
+                                                    name="newpassword" required>
+                                            </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a href="javascript:void(0)"
+                                                    class="btn btn-darkblue w-100 fs-14 mt-3 py-2">Submit</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </form>
@@ -218,13 +217,13 @@
         </div>
     </section>
 
-    <!-- Vendor JS Files -->
-    <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
-    <script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
-    <script src="../assets/vendor/php-email-form/validate.js"></script>
-
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/confetti.min.js"></script>
+    <script src="../assets/js/confetti.js"></script>
 
     <script>
         // Login page Swiper
