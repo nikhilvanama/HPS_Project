@@ -12,6 +12,8 @@ body.user {
     background: #f4f4f4;
 }
 
+.lx{font-family: "Lexend", sans-serif;}
+
 h1,
 h2,
 h3,
@@ -243,6 +245,13 @@ li{list-style: none !important;}
 
 .bc-grey4{border-color: rgba(153,152,151,0.25) !important;}
 
+.bc-lightblue{border-color: #ebeef6 !important;}
+
+.bc-lightblue2{border-color: #e1e5f1 !important;}
+
+.bc-lightblue3{border-color: #c0cae3 !important;}
+
+
 /* Objects and Texts */
 
 .white-wrap{white-space: nowrap !important;}
@@ -269,6 +278,16 @@ li{list-style: none !important;}
 
 .trans-07{transition: all 0.7s;}
 
+/* Width */
+
+.width-max{width: max-content !important;}
+
+.width-auto{width: auto !important;}
+
+.width-0{width: 0 !important;}
+
+.width-100{width: 100% !important;}
+
 /* Colors */
 
 .text-lightblue1{color:#ebeef6 !important;}
@@ -283,7 +302,13 @@ li{list-style: none !important;}
 
 .text-darkblue {color: #273f7b !important;}
 
+.text-green{color: rgba(48, 190, 130, 1) !important;}
+
+.text-lightgreen{color: rgba(224, 245, 236, 1) !important;}
+
 .text-red { color: #ff304d !important;}
+
+.text-lightred{color: #ffeaed !important;}
 
 .text-dark{color: rgba(37, 36, 36, 1) !important;}
 
@@ -294,6 +319,8 @@ li{list-style: none !important;}
 .text-grey2{color: rgba(115, 113, 112, 1) !important;}
 
 .text-grey3{color: rgba(153, 152, 151, 1) !important;}
+
+.text-grey4{color: rgba(153,152,151,0.25) !important;}
 
 /* BackGround Colors */
 
@@ -307,6 +334,10 @@ li{list-style: none !important;}
 
 .bg-darkblue{background-color: #17264A !important;}
 
+.bg-lightgreen{background-color: rgba(224, 245, 236, 1) !important;}
+
+.bg-lightred{background-color: #ffeaed !important;}
+
 .bg-light{background-color: rgb(255, 255, 255) !important;}
 
 .bg-dark1{background-color: rgba(37, 36, 36, 1) !important;}
@@ -316,6 +347,10 @@ li{list-style: none !important;}
 .bg-lightdark2{background-color: rgba(153,152,151,0.25) !important;}
 
 .bg-dark2{background-color: rgba(62, 61, 61, 1.5) !important;}
+
+/* Hover Color */
+
+.hover-darkblue:hover{color: #273f7b !important;}
 
 /* Filter */
 

@@ -230,3 +230,17 @@ body::before{
         transform: translateX(-350px);
     }
 }
+
+/* AWB Tracking */
+
+.tracking main.tracking section.tracking .tracking-process .tracking-steps .step .icon::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: rgba(153,152,151,0.25);
+    z-index: 0;
+}

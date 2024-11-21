@@ -37,17 +37,23 @@
 </head>
 
 <!-- ======= Header ======= -->
-<header id="header1" class="header fixed-top d-flex align-items-center">
-
-    <div class="d-flex align-items-center justify-content-between">
-        <a href="../Admin/index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo.png" alt="">
-            <span class="d-block">HPS Shipment</span>
-        </a>
-        <i class="bi bi-list toggle-sidebar-btn"></i>
+<header id="header1" class="header fixed-top d-flex align-items-center py-2 px-0 p-lg-3" style="height: 75px;">
+    <div class="container d-flex justify-content-between align-items-center px-3" style="height: 60px;">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="../Admin/index.html" class="logo d-none d-lg-flex align-items-center">
+                <img src="../assets/img/logo 1.png" alt="Logo">
+                <span class="d-block fs-24 mt-2 text-blue lx">HPS Shipment</span>
+            </a>
+            <a href="../Admin/index.html" class="logo d-lg-none align-items-center">
+                <img src="../assets/img/logo.png" alt="Logo" style="max-height: 50px;">
+            </a>
+        </div>
+        <nav class="header-nav ms-auto d-flex column-gap-3 column-gap-lg-5">
+            <li class="nav-item"><a href="https://hps.com.sa/" class="fs-16 text-blue hover-darkblue trans-02">Home</a></li>
+            <li class="nav-item"><a href="../User/awb-tracking.html" class="fs-16 text-blue hover-darkblue trans-02">Tracking</a></li>
+            <li class="nav-item"><a href="https://hps.com.sa/head.html" class="fs-16 text-blue hover-darkblue trans-02 d-none d-lg-block">Contact</a></li>
+        </nav>
     </div>
-    <nav class="header-nav ms-auto">
-    </nav>
 </header>
 
 <body class="user create-shipment position-relative" style="padding: 60px 0px 300px;">
@@ -102,456 +108,462 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"></path>
         </div>
     </div>
     <!-- Footer Photo -->
-    <div class="position-absolute mt-auto overflow-hidden filter z-0" style="width: 100%; bottom:0px">
+    <div class="position-absolute mt-auto overflow-hidden filter z-0 d-none d-lg-block" style="width: 100%; bottom:0px">
         <div class="row">
             <img src="../assets/img/regbackground2.png" alt="">
         </div>
     </div>
 
-    <section class="create-shipment wizard-form z-5">
-        <div class="container">
-            <h2 class="text-blue fs-24 fw-550 my-3">Create Shipment</h2>
-            <!-- Wizard Form Steps -->
-            <div class="wizard-form d-flex pb-3 b05-b bc-grey3">
-                <div class="step-1 step done d-flex align-items-center cursor-pointer position-relative p-2">
-                    <div class="status position-relative d-flex justify-content-center align-items-center br-50 p-2"
-                        style="width: 40px; height:40px;">
-                        <i class="fa-solid fa-truck icon fadein-03s"></i>
-                        <i class="fa-solid fa-check fadein-03s text-blue fs-18"></i>
+    <main class="create-shipment mt-5" id="create-shipment">
+        <section class="create-shipment wizard-form z-5">
+            <div class="container">
+                <h2 class="text-blue fs-24 fw-550 my-3">Create Shipment</h2>
+                <!-- Wizard Form Steps -->
+                <div class="wizard-form d-flex pb-3 b05-b bc-grey3">
+                    <div class="step-1 step done d-flex align-items-center cursor-pointer position-relative p-2">
+                        <div class="status position-relative d-flex justify-content-center align-items-center br-50 p-2"
+                            style="width: 40px; height:40px;">
+                            <i class="fa-solid fa-truck icon fadein-03s"></i>
+                            <i class="fa-solid fa-check fadein-03s text-blue fs-18"></i>
+                        </div>
+                        <div class="step-name ms-3 d-flex flex-column justify-content-center overflow-hidden">
+                            <p class="fs-12 lh-12 fw-350 text-grey3 white-wrap">Step-1</p>
+                            <p class="fs-16 fw-500 white-wrap title">Sender Details</p>
+                        </div>
                     </div>
-                    <div class="step-name ms-3 d-flex flex-column justify-content-center overflow-hidden">
-                        <p class="fs-12 lh-12 fw-350 text-grey3 white-wrap">Step-1</p>
-                        <p class="fs-16 fw-500 white-wrap title">Sender Details</p>
+                    <div class="line position-relative"></div>
+                    <div class="step-2 step done d-flex align-items-center cursor-pointer position-relative p-2"
+                        style="margin-left: 105px;">
+                        <div class="status position-relative d-flex justify-content-center align-items-center br-50 p-2"
+                            style="width: 40px; height:40px;">
+                            <i class="fa-solid fa-truck-pickup icon fadein-03s"></i>
+                            <i class="fa-solid fa-check fadein-03s text-blue fs-18"></i>
+                        </div>
+                        <div class="step-name ms-3 d-flex flex-column justify-content-center overflow-hidden">
+                            <p class="fs-12 lh-12 fw-350 text-grey3 white-wrap">Step-2</p>
+                            <p class="fs-16 fw-500 white-wrap title">Recipient Details</p>
+                        </div>
+                    </div>
+                    <div class="line position-relative"></div>
+                    <div class="step-3 step active d-flex align-items-center cursor-pointer position-relative p-2"
+                        style="margin-left: 105px;">
+                        <div class="status position-relative d-flex justify-content-center align-items-center br-50 p-2"
+                            style="width: 40px; height:40px;">
+                            <i class="fa-solid fa-file-lines icon fadein-03s"></i>
+                            <i class="fa-solid fa-check fadein-03s text-blue fs-18"></i>
+                        </div>
+                        <div class="step-name ms-3 d-flex flex-column justify-content-center overflow-hidden">
+                            <p class="fs-12 lh-12 fw-350 text-grey3 white-wrap">Step-3</p>
+                            <p class="fs-16 fw-500 white-wrap title">Order Details</p>
+                        </div>
+                    </div>
+                    <div class="line position-relative"></div>
+                    <div class="step-4 step d-flex align-items-center cursor-pointer position-relative p-2"
+                        style="margin-left: 105px;">
+                        <div class="status position-relative d-flex justify-content-center align-items-center br-50 p-2"
+                            style="width: 40px; height:40px;">
+                            <i class="fa-solid fa-box icon fadein-03s"></i>
+                            <i class="fa-solid fa-check fadein-03s text-blue fs-18"></i>
+                        </div>
+                        <div class="step-name ms-3 d-flex flex-column justify-content-center overflow-hidden">
+                            <p class="fs-12 lh-12 fw-350 text-grey3 white-wrap">Step-4</p>
+                            <p class="fs-16 fw-500 white-wrap title">Schedule PickUp</p>
+                        </div>
                     </div>
                 </div>
-                <div class="line position-relative"></div>
-                <div class="step-2 step done d-flex align-items-center cursor-pointer position-relative p-2"
-                    style="margin-left: 105px;">
-                    <div class="status position-relative d-flex justify-content-center align-items-center br-50 p-2"
-                        style="width: 40px; height:40px;">
-                        <i class="fa-solid fa-truck-pickup icon fadein-03s"></i>
-                        <i class="fa-solid fa-check fadein-03s text-blue fs-18"></i>
+                <!-- Wizard Form -->
+                <div class="row mt-4">
+                    <div class="col-12 col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="shipment-form">
+                                    <form action="#" method="post" class="need-focus">
+                                        <div class="step step-1 pt-3">
+                                            <p class="fs-20 fw-500 text-blue">Sender Details</p>
+                                            <div class="row my-3 row-gap-3 align-items-center">
+                                                <p class="fs-15 fw-450 text-darkblue">PickUp Contact Details</p>
+                                                <div class="col-md-4 position-relative">
+                                                    <label for="sender-name" class="fs-12 fw-300 text-grey3">Contact
+                                                        Person</label>
+                                                    <input type="text" class="form-control" id="sender-name"
+                                                        name="sender-name" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="sender-phn" class="fs-12 fw-300 text-grey3">Phone
+                                                        Number</label>
+                                                    <input type="tell" class="form-control" id="sender-phn"
+                                                        name="sender-phn" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="sender-altphn" class="fs-12 fw-300 text-grey3">Alternate
+                                                        Phone Number (Optional)</label>
+                                                    <input type="tell" class="form-control" id="sender-altphn"
+                                                        name="sender-altphn" required>
+                                                </div>
+                                                <div class="col-md-5 position-relative mt-1 mt-md-0">
+                                                    <label for="sender-email" class="fs-12 fw-300 text-grey3">Email
+                                                        Address</label>
+                                                    <input type="mail" class="form-control" id="sender-email"
+                                                        name="sender-email" required>
+                                                        <a href="javascript:void(0)" class="btn btn-darkblue fs-12 fw-300 br-5 position-absolute" style="right: 17px; top:5px;">Send OTP</a>
+                                                    <small class="position-absolute fs-10 lh-20 fw-300 ms-2">We'll call this
+                                                        number to coordinate pickup</small>
+                                                </div>
+                                                <div class="col-md-3 position-relative mt-4 mt-md-0">
+                                                    <label for="enter-otp" class="fs-12 fw-300 text-grey3">Enter OTP</label>
+                                                    <input type="text" class="form-control" id="enter-otp" name="enter-otp"
+                                                        required>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <a href="javascript:void(0)" class="btn btn-darkblue fs-13 white-wrap"><i class="fa-solid fa-circle-check me-2"></i><i class="fa-solid fa-circle-xmark me-2"></i> Verify</a>
+                                                </div>
+                                            </div>
+                                            <div class="row my-3 row-gap-3">
+                                                <p class="fs-15 fw-450 text-darkblue mt-2">Complete Address Details</p>
+                                                <div class="col-md-8 position-relative mt-1 mt-md-0">
+                                                    <label for="sender-address" class="fs-12 fw-300 text-grey3">Flat,
+                                                        Housing no., Building, Apartment, Area, street</label>
+                                                    <input type="text" class="form-control" id="sender-address"
+                                                        name="sender-address" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="sender-pincode" class="fs-12 fw-300 text-grey3">Pin
+                                                        Code</label>
+                                                    <input type="text" class="form-control" id="sender-pincode"
+                                                        name="sender-pincode" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="sender-city" class="fs-12 fw-300 text-grey3">City</label>
+                                                    <input type="text" class="form-control" id="sender-city"
+                                                        name="sender-city" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="sender-state" class="fs-12 fw-300 text-grey3">State</label>
+                                                    <input type="text" class="form-control" id="sender-state"
+                                                        name="sender-state" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="sender-country"
+                                                        class="fs-12 fw-300 text-grey3">Country</label>
+                                                    <input type="text" class="form-control" id="sender-country"
+                                                        name="sender-country" required>
+                                                </div>
+                                            </div>
+                                            <div class="row my-3 align-items-center">
+                                                <div class="col-md-2">
+                                                    <p class="fs-14 fw-350 text-dark mb-3 mb-md-0">Address Save As</p>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <ul class="p-0 m-0 d-flex gap-3">
+                                                        <li class="home">
+                                                            <input type="radio" name="sender-saveas" id="home"
+                                                                autocomplete="off">
+                                                            <label for="home"
+                                                                class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Home</label>
+                                                        </li>
+                                                        <li class="office">
+                                                            <input type="radio" name="sender-saveas" id="office"
+                                                                autocomplete="off">
+                                                            <label for="office"
+                                                                class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Office</label>
+                                                        </li>
+                                                        <li class="other">
+                                                            <input type="radio" name="sender-saveas" id="other"
+                                                                autocomplete="off">
+                                                            <label for="other"
+                                                                class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Other</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row my-3 justify-content-end">
+                                                <div class="col-md-2">
+                                                    <a href="javascript:void(0)"
+                                                        class="btn btn-darkblue width-max fs-14">Save & Next</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="step step-2 pt-3">
+                                            <p class="fs-20 fw-500 text-blue">Recipient Details</p>
+                                            <div class="row my-3 row-gap-3">
+                                                <p class="fs-15 fw-450 text-darkblue">Delivery Contact Details</p>
+                                                <div class="col-md-4 position-relative">
+                                                    <label for="recipient-name" class="fs-12 fw-300 text-grey3">Contact
+                                                        Person</label>
+                                                    <input type="text" class="form-control" id="recipient-name"
+                                                        name="recipient-name" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="recipient-email" class="fs-12 fw-300 text-grey3">Email
+                                                        Address</label>
+                                                    <input type="mail" class="form-control" id="recipient-email"
+                                                        name="recipient-email" required>
+                                                    <small
+                                                        class="position-absolute fs-10 lh-20 fw-300 ms-2 overflow-hidden white-wrap ">We'll
+                                                        call this number to coordinate pickup</small>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-4 mt-md-0">
+                                                    <label for="recipient-phn" class="fs-12 fw-300 text-grey3">Phone
+                                                        Number</label>
+                                                    <input type="tell" class="form-control" id="recipient-phn"
+                                                        name="recipient-phn" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="recipient-altphn" class="fs-12 fw-300 text-grey3">Alternate
+                                                        Phone Number (Optional)</label>
+                                                    <input type="tell" class="form-control" id="recipient-altphn"
+                                                        name="recipient-altphn" required>
+                                                </div>
+                                            </div>
+                                            <div class="row my-3 row-gap-3">
+                                                <p class="fs-15 fw-450 text-darkblue">Complete Address Details</p>
+                                                <div class="col-md-8 position-relative overflow-hidden">
+                                                    <label for="recipient-address"
+                                                        class="fs-12 fw-300 text-grey3 white-wrap overflow-hidden text-ellipsis">Flat,
+                                                        Housing no., Building, Apartment, Area, street</label>
+                                                    <input type="text" class="form-control" id="recipient-address"
+                                                        name="recipient-address" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="recipient-pincode" class="fs-12 fw-300 text-grey3">Pin
+                                                        Code</label>
+                                                    <input type="text" class="form-control" id="recipient-pincode"
+                                                        name="recipient-pincode" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="recipient-city" class="fs-12 fw-300 text-grey3">City</label>
+                                                    <input type="text" class="form-control" id="recipient-city"
+                                                        name="recipient-city" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="recipient-state"
+                                                        class="fs-12 fw-300 text-grey3">State</label>
+                                                    <input type="text" class="form-control" id="recipient-state"
+                                                        name="recipient-state" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="recipient-country"
+                                                        class="fs-12 fw-300 text-grey3">Country</label>
+                                                    <input type="text" class="form-control" id="recipient-country"
+                                                        name="recipient-country" required>
+                                                </div>
+                                            </div>
+                                            <div class="row my-3 align-items-center">
+                                                <div class="col-md-2">
+                                                    <p class="fs-14 fw-350 text-dark mb-3 mb-md-0">Address Save As</p>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <ul class="p-0 m-0 d-flex gap-3">
+                                                        <li class="home">
+                                                            <input type="radio" name="recipient-saveas" id="home"
+                                                                autocomplete="off">
+                                                            <label for="home"
+                                                                class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Home</label>
+                                                        </li>
+                                                        <li class="office">
+                                                            <input type="radio" name="recipient-saveas" id="office"
+                                                                autocomplete="off">
+                                                            <label for="office"
+                                                                class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Office</label>
+                                                        </li>
+                                                        <li class="other">
+                                                            <input type="radio" name="recipient-saveas" id="other"
+                                                                autocomplete="off">
+                                                            <label for="other"
+                                                                class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Other</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row my-3 justify-content-end">
+                                                <div class="col-md-2">
+                                                    <a href="javascript:void(0)"
+                                                        class="btn btn-darkblue width-max fs-14">Next</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="step step-3 pt-3">
+                                            <p class="fs-20 fw-500 text-blue">Package Details</p>
+                                            <div class="row my-3 row-gap-3">
+                                                <div class="col-md-4 position-relative">
+                                                    <label for="pack-details" class="fs-12 fw-300 text-grey3">Package
+                                                        Weight</label>
+                                                    <input type="text" class="form-control" id="pack-details"
+                                                        name="pack-details" required>
+                                                    <small class="position-absolute fs-10 lh-20 fw-300 ms-2">(Max. 3 digits
+                                                        after decimal place)</small>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-4 mt-md-0">
+                                                    <label for="pack-value" class="fs-12 fw-300 text-grey3">Package
+                                                        Value</label>
+                                                    <input type="text" class="form-control" id="pack-value"
+                                                        name="pack-value" required>
+                                                </div>
+                                            </div>
+                                            <div class="row row-gap-3 mt-md-4">
+                                                <div class="col-md-4 mt-md-2 mt-1 position-relative">
+                                                    <label for="pack-content" class="fs-12 fw-300 text-grey3">Select Package
+                                                        Content</label>
+                                                    <select class="form-select" aria-label="Default select example"
+                                                        name="pack-content" id="pack-content" required>
+                                                        <option value=""></option>
+                                                        <option value="0">Books & Documents</option>
+                                                        <option value="1">Clothes & Personal Items</option>
+                                                        <option value="2">Consumables</option>
+                                                        <option value="3">Electronics</option>
+                                                        <option value="4">Household Items</option>
+                                                        <option value="5">Others</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4 mt-md-2 mt-1 position-relative">
+                                                    <label for="others" class="fs-12 fw-300 text-grey3">Write Package
+                                                        Content</label>
+                                                    <input type="text" class="form-control" id="others" name="others"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="row my-3 row-gap-3 align-items-center position-relative">
+                                                <div class="col-md-2">
+                                                    <p class="fs-14 fw-350 text-dark">Dimensions</p>
+                                                </div>
+                                                <div class="col-md-3 position-relative">
+                                                    <label for="length" class="fs-12 fw-300 text-grey3">Length (in
+                                                        cm)</label>
+                                                    <input type="text" class="form-control" id="length" name="length"
+                                                        required>
+                                                </div>
+                                                <div class="col-md-3 position-relative mt-1 mt-md-0">
+                                                    <label for="breadth" class="fs-12 fw-300 text-grey3">Breadth (in
+                                                        cm)</label>
+                                                    <input type="text" class="form-control" id="breadth" name="breadth"
+                                                        required>
+                                                </div>
+                                                <div class="col-md-3 position-relative mt-1 mt-md-0">
+                                                    <label for="height" class="fs-12 fw-300 text-grey3">Height (in
+                                                        cm)</label>
+                                                    <input type="text" class="form-control" id="height" name="height"
+                                                        required>
+                                                </div>
+                                                <div class="note position-absolute d-none d-md-block"
+                                                    style="bottom: -18px;">
+                                                    <p class="text-blue fs-9">Shipping charges are calculated based on the
+                                                        higher value of package dimensions or weight.</p>
+                                                </div>
+                                                <div class="note position-absolute d-md-none" style="bottom: -30px;">
+                                                    <p class="text-blue fs-9">Shipping charges are calculated based on the
+                                                        higher value of package dimensions or weight.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-4 align-items-center">
+                                                <div class="col-md-2 mt-3">
+                                                    <p class="fs-14 fw-350 text-dark">Payment Mode</p>
+                                                </div>
+                                                <div class="col-md-10 mt-3">
+                                                    <ul class="p-0 m-0 d-flex gap-3">
+                                                        <li class="cod">
+                                                            <input type="radio" name="payment" id="cod" autocomplete="off"
+                                                                checked>
+                                                            <label for="cod"
+                                                                class="fs-13 fw-350 text-grey3 p-1 px-3 br-50 b05 bc-grey4 cursor-pointer">Cash
+                                                                on Delivery</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row my-3 justify-content-end">
+                                                <div class="col-md-2">
+                                                    <a href="javascript:void(0)"
+                                                        class="btn btn-darkblue width-max fs-14">Next</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="step step-4 pt-3">
+                                            <p class="fs-20 fw-500 text-blue">Schedule PickUp</p>
+                                            <div class="row my-3 row-gap-3">
+                                                <p class="fs-15 fw-450 text-darkblue">Select PickUp Time Slot</p>
+                                                <div class="col-md-4 position-relative">
+                                                    <label for="pickup-date" class="fs-12 fw-300 text-grey3">Select Pickup
+                                                        Date</label>
+                                                    <input type="date" class="form-control" id="pickup-date"
+                                                        name="pickup-date" required>
+                                                </div>
+                                                <div class="col-md-4 position-relative mt-1 mt-md-0">
+                                                    <label for="pickup-time" class="fs-12 fw-300 text-grey3">Pickup Time
+                                                        Slot</label>
+                                                    <select class="form-select" aria-label="Default select example"
+                                                        name="pickup-time" id="pickup-time" required>
+                                                        <option value=""></option>
+                                                        <option value="0">10:00am - 11:00am</option>
+                                                        <option value="1">11:00am - 12:00pm</option>
+                                                        <option value="2">12:00pm - 1:00pm</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row my-3 mt-4 align-items-start">
+                                                <div class="col-md-3">
+                                                    <p class="fs-14 fw-350 text-dark mb-3 mb-md-0">Select Delivery Type</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <ul class="p-0 m-0 pb-2 d-flex overflow-x-scroll gap-3">
+                                                        <li class="standard">
+                                                            <input type="radio" name="type" id="standard"
+                                                                autocomplete="off">
+                                                            <label for="standard"
+                                                                class="p-2 br-5 b05 bc-grey4 cursor-pointer"
+                                                                style="width: 220px;">
+                                                                <div class="d-flex align-items-center mb-2">
+                                                                    <img src="../assets/img/standard.svg" alt="standard"
+                                                                        height="30px">
+                                                                    <span class="fs-15 fw-350 text-grey3">Standard</span>
+                                                                </div>
+                                                                <span class="price fs-26 fw-500 text-dark"><span
+                                                                        class="fw-300 text-grey2 fs-24">$</span> 2000</span>
+                                                                <span class="text-grey3 fs-12 fw-300 d-block">Delivered
+                                                                    within 6 Days</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="express">
+                                                            <input type="radio" name="type" id="express" autocomplete="off">
+                                                            <label for="express"
+                                                                class="p-2 br-5 b05 bc-grey4 cursor-pointer"
+                                                                style="width: 220px;">
+                                                                <div class="d-flex align-items-center mb-2">
+                                                                    <img src="../assets/img/express.svg" alt="standard"
+                                                                        height="30px">
+                                                                    <span class="fs-15 fw-350 text-grey3">Express</span>
+                                                                </div>
+                                                                <span class="price fs-26 fw-500 text-dark"><span
+                                                                        class="fw-300 text-grey2 fs-24">$</span> 3500</span>
+                                                                <span class="text-grey3 fs-12 fw-300 d-block">Delivered
+                                                                    within 3 Days</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row my-3 justify-content-end">
+                                                <div class="col-md-2">
+                                                    <a href="javascript:void(0)" id="submit-shipment"
+                                                        class="btn btn-darkblue width-max fs-14" data-bs-toggle="modal" data-bs-target="#success-msg-popup">Place Order</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="step-name ms-3 d-flex flex-column justify-content-center overflow-hidden">
-                        <p class="fs-12 lh-12 fw-350 text-grey3 white-wrap">Step-2</p>
-                        <p class="fs-16 fw-500 white-wrap title">Recipient Details</p>
-                    </div>
-                </div>
-                <div class="line position-relative"></div>
-                <div class="step-3 step active d-flex align-items-center cursor-pointer position-relative p-2"
-                    style="margin-left: 105px;">
-                    <div class="status position-relative d-flex justify-content-center align-items-center br-50 p-2"
-                        style="width: 40px; height:40px;">
-                        <i class="fa-solid fa-file-lines icon fadein-03s"></i>
-                        <i class="fa-solid fa-check fadein-03s text-blue fs-18"></i>
-                    </div>
-                    <div class="step-name ms-3 d-flex flex-column justify-content-center overflow-hidden">
-                        <p class="fs-12 lh-12 fw-350 text-grey3 white-wrap">Step-3</p>
-                        <p class="fs-16 fw-500 white-wrap title">Order Details</p>
-                    </div>
-                </div>
-                <div class="line position-relative"></div>
-                <div class="step-4 step d-flex align-items-center cursor-pointer position-relative p-2"
-                    style="margin-left: 105px;">
-                    <div class="status position-relative d-flex justify-content-center align-items-center br-50 p-2"
-                        style="width: 40px; height:40px;">
-                        <i class="fa-solid fa-box icon fadein-03s"></i>
-                        <i class="fa-solid fa-check fadein-03s text-blue fs-18"></i>
-                    </div>
-                    <div class="step-name ms-3 d-flex flex-column justify-content-center overflow-hidden">
-                        <p class="fs-12 lh-12 fw-350 text-grey3 white-wrap">Step-4</p>
-                        <p class="fs-16 fw-500 white-wrap title">Schedule PickUp</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Wizard Form -->
-            <div class="row mt-4">
-                <div class="col-12 col-md-9">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="shipment-form">
-                                <form action="#" method="post" class="need-focus">
-                                    <div class="step step-1 pt-3">
-                                        <p class="fs-20 fw-500 text-blue">Sender Details</p>
-                                        <div class="row my-3 row-gap-3">
-                                            <p class="fs-15 fw-450 text-darkblue">PickUp Contact Details</p>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="sender-name" class="fs-12 fw-300 text-grey3">Contact
-                                                    Person</label>
-                                                <input type="text" class="form-control" id="sender-name"
-                                                    name="sender-name" required>
-                                            </div>
-                                            <div class="col-md-5 position-relative">
-                                                <label for="sender-email" class="fs-12 fw-300 text-grey3">Email
-                                                    Address</label>
-                                                <input type="mail" class="form-control" id="sender-email"
-                                                    name="sender-email" required>
-                                                <small class="position-absolute fs-10 lh-20 fw-300 ms-2">We'll call this
-                                                    number to coordinate pickup</small>
-                                            </div>
-                                            <div class="col-md-3 position-relative">
-                                                <label for="enter-otp" class="fs-12 fw-300 text-grey3">Enter OTP</label>
-                                                <input type="text" class="form-control" id="enter-otp" name="enter-otp"
-                                                    required>
-                                            </div>
-                                            <div class="col-md-4 position-relative mt-4">
-                                                <label for="sender-phn" class="fs-12 fw-300 text-grey3">Phone
-                                                    Number</label>
-                                                <input type="tell" class="form-control" id="sender-phn"
-                                                    name="sender-phn" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative mt-4">
-                                                <label for="sender-altphn" class="fs-12 fw-300 text-grey3">Alternate
-                                                    Phone Number (Optional)</label>
-                                                <input type="tell" class="form-control" id="sender-altphn"
-                                                    name="sender-altphn" required>
-                                            </div>
-                                        </div>
-                                        <div class="row my-3 row-gap-3">
-                                            <p class="fs-15 fw-450 text-darkblue">Complete Address Details</p>
-                                            <div class="col-md-8 position-relative">
-                                                <label for="sender-address" class="fs-12 fw-300 text-grey3">Flat,
-                                                    Housing no., Building, Apartment, Area, street</label>
-                                                <input type="text" class="form-control" id="sender-address"
-                                                    name="sender-address" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="sender-pincode" class="fs-12 fw-300 text-grey3">Pin
-                                                    Code</label>
-                                                <input type="text" class="form-control" id="sender-pincode"
-                                                    name="sender-pincode" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="sender-city" class="fs-12 fw-300 text-grey3">City</label>
-                                                <input type="text" class="form-control" id="sender-city"
-                                                    name="sender-city" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="sender-state" class="fs-12 fw-300 text-grey3">State</label>
-                                                <input type="text" class="form-control" id="sender-state"
-                                                    name="sender-state" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="sender-country"
-                                                    class="fs-12 fw-300 text-grey3">Country</label>
-                                                <input type="text" class="form-control" id="sender-country"
-                                                    name="sender-country" required>
-                                            </div>
-                                        </div>
-                                        <div class="row my-3 align-items-center">
-                                            <div class="col-md-2">
-                                                <p class="fs-14 fw-350 text-dark mb-3 mb-md-0">Address Save As</p>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <ul class="p-0 m-0 d-flex gap-3">
-                                                    <li class="home">
-                                                        <input type="radio" name="sender-saveas" id="home"
-                                                            autocomplete="off">
-                                                        <label for="home"
-                                                            class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Home</label>
-                                                    </li>
-                                                    <li class="office">
-                                                        <input type="radio" name="sender-saveas" id="office"
-                                                            autocomplete="off">
-                                                        <label for="office"
-                                                            class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Office</label>
-                                                    </li>
-                                                    <li class="other">
-                                                        <input type="radio" name="sender-saveas" id="other"
-                                                            autocomplete="off">
-                                                        <label for="other"
-                                                            class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Other</label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="row my-3 justify-content-end">
-                                            <div class="col-md-2">
-                                                <a href="javascript:void(0)"
-                                                    class="btn btn-darkblue width-max fs-14">Save & Next</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="step step-2 pt-3 -none">
-                                        <p class="fs-20 fw-500 text-blue">Recipient Details</p>
-                                        <div class="row my-3 row-gap-3">
-                                            <p class="fs-15 fw-450 text-darkblue">Delivery Contact Details</p>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="recipient-name" class="fs-12 fw-300 text-grey3">Contact
-                                                    Person</label>
-                                                <input type="text" class="form-control" id="recipient-name"
-                                                    name="recipient-name" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="recipient-email" class="fs-12 fw-300 text-grey3">Email
-                                                    Address</label>
-                                                <input type="mail" class="form-control" id="recipient-email"
-                                                    name="recipient-email" required>
-                                                <small
-                                                    class="position-absolute fs-10 lh-20 fw-300 ms-2 overflow-hidden white-wrap ">We'll
-                                                    call this number to coordinate pickup</small>
-                                            </div>
-                                            <div class="col-md-4 position-relative mt-4 mt-md-0">
-                                                <label for="recipient-phn" class="fs-12 fw-300 text-grey3">Phone
-                                                    Number</label>
-                                                <input type="tell" class="form-control" id="recipient-phn"
-                                                    name="recipient-phn" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="recipient-altphn" class="fs-12 fw-300 text-grey3">Alternate
-                                                    Phone Number (Optional)</label>
-                                                <input type="tell" class="form-control" id="recipient-altphn"
-                                                    name="recipient-altphn" required>
-                                            </div>
-                                        </div>
-                                        <div class="row my-3 row-gap-3">
-                                            <p class="fs-15 fw-450 text-darkblue">Complete Address Details</p>
-                                            <div class="col-md-8 position-relative overflow-hidden">
-                                                <label for="recipient-address"
-                                                    class="fs-12 fw-300 text-grey3 white-wrap overflow-hidden text-ellipsis">Flat,
-                                                    Housing no., Building, Apartment, Area, street</label>
-                                                <input type="text" class="form-control" id="recipient-address"
-                                                    name="recipient-address" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="recipient-pincode" class="fs-12 fw-300 text-grey3">Pin
-                                                    Code</label>
-                                                <input type="text" class="form-control" id="recipient-pincode"
-                                                    name="recipient-pincode" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="recipient-city" class="fs-12 fw-300 text-grey3">City</label>
-                                                <input type="text" class="form-control" id="recipient-city"
-                                                    name="recipient-city" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="recipient-state"
-                                                    class="fs-12 fw-300 text-grey3">State</label>
-                                                <input type="text" class="form-control" id="recipient-state"
-                                                    name="recipient-state" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="recipient-country"
-                                                    class="fs-12 fw-300 text-grey3">Country</label>
-                                                <input type="text" class="form-control" id="recipient-country"
-                                                    name="recipient-country" required>
-                                            </div>
-                                        </div>
-                                        <div class="row my-3 align-items-center">
-                                            <div class="col-md-2">
-                                                <p class="fs-14 fw-350 text-dark mb-3 mb-md-0">Address Save As</p>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <ul class="p-0 m-0 d-flex gap-3">
-                                                    <li class="home">
-                                                        <input type="radio" name="recipient-saveas" id="home"
-                                                            autocomplete="off">
-                                                        <label for="home"
-                                                            class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Home</label>
-                                                    </li>
-                                                    <li class="office">
-                                                        <input type="radio" name="recipient-saveas" id="office"
-                                                            autocomplete="off">
-                                                        <label for="office"
-                                                            class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Office</label>
-                                                    </li>
-                                                    <li class="other">
-                                                        <input type="radio" name="recipient-saveas" id="other"
-                                                            autocomplete="off">
-                                                        <label for="other"
-                                                            class="fs-13 fw-350 text-grey3 p-2 br-50 b05 bc-grey4 cursor-pointer">Other</label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="row my-3 justify-content-end">
-                                            <div class="col-md-2">
-                                                <a href="javascript:void(0)"
-                                                    class="btn btn-darkblue width-max fs-14">Next</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="step step-3 pt-3 -none">
-                                        <p class="fs-20 fw-500 text-blue">Package Details</p>
-                                        <div class="row my-3 row-gap-3">
-                                            <div class="col-md-4 position-relative">
-                                                <label for="pack-details" class="fs-12 fw-300 text-grey3">Package
-                                                    Weight</label>
-                                                <input type="text" class="form-control" id="pack-details"
-                                                    name="pack-details" required>
-                                                <small class="position-absolute fs-10 lh-20 fw-300 ms-2">(Max. 3 digits
-                                                    after decimal place)</small>
-                                            </div>
-                                            <div class="col-md-4 position-relative mt-4 mt-md-0">
-                                                <label for="pack-value" class="fs-12 fw-300 text-grey3">Package
-                                                    Value</label>
-                                                <input type="text" class="form-control" id="pack-value"
-                                                    name="pack-value" required>
-                                            </div>
-                                        </div>
-                                        <div class="row row-gap-3 mt-4 mb-3">
-                                            <div class="col-md-4 mt-2 position-relative">
-                                                <label for="pack-content" class="fs-12 fw-300 text-grey3">Select Package
-                                                    Content</label>
-                                                <select class="form-select" aria-label="Default select example"
-                                                    name="pack-content" id="pack-content" required>
-                                                    <option value=""></option>
-                                                    <option value="0">Books & Documents</option>
-                                                    <option value="1">Clothes & Personal Items</option>
-                                                    <option value="2">Consumables</option>
-                                                    <option value="3">Electronics</option>
-                                                    <option value="4">Household Items</option>
-                                                    <option value="5">Others</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-4 mt-2 position-relative">
-                                                <label for="others" class="fs-12 fw-300 text-grey3">Write Package
-                                                    Content</label>
-                                                <input type="text" class="form-control" id="others" name="others"
-                                                    required>
-                                            </div>
-                                        </div>
-                                        <div class="row my-3 row-gap-3 align-items-center position-relative">
-                                            <div class="col-md-2">
-                                                <p class="fs-14 fw-350 text-dark">Dimensions</p>
-                                            </div>
-                                            <div class="col-md-3 position-relative">
-                                                <label for="length" class="fs-12 fw-300 text-grey3">Length (in
-                                                    cm)</label>
-                                                <input type="text" class="form-control" id="length" name="length"
-                                                    required>
-                                            </div>
-                                            <div class="col-md-3 position-relative">
-                                                <label for="breadth" class="fs-12 fw-300 text-grey3">Breadth (in
-                                                    cm)</label>
-                                                <input type="text" class="form-control" id="breadth" name="breadth"
-                                                    required>
-                                            </div>
-                                            <div class="col-md-3 position-relative">
-                                                <label for="height" class="fs-12 fw-300 text-grey3">Height (in
-                                                    cm)</label>
-                                                <input type="text" class="form-control" id="height" name="height"
-                                                    required>
-                                            </div>
-                                            <div class="note position-absolute d-none d-md-block"
-                                                style="bottom: -18px;">
-                                                <p class="text-blue fs-9">Shipping charges are calculated based on the
-                                                    higher value of package dimensions or weight.</p>
-                                            </div>
-                                            <div class="note position-absolute d-md-none" style="bottom: -30px;">
-                                                <p class="text-blue fs-9">Shipping charges are calculated based on the
-                                                    higher value of package dimensions or weight.</p>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-4 align-items-center">
-                                            <div class="col-md-2 mt-3">
-                                                <p class="fs-14 fw-350 text-dark">Payment Mode</p>
-                                            </div>
-                                            <div class="col-md-10 mt-3">
-                                                <ul class="p-0 m-0 d-flex gap-3">
-                                                    <li class="cod">
-                                                        <input type="radio" name="payment" id="cod" autocomplete="off"
-                                                            checked>
-                                                        <label for="cod"
-                                                            class="fs-13 fw-350 text-grey3 p-1 px-3 br-50 b05 bc-grey4 cursor-pointer">Cash
-                                                            on Delivery</label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="row my-3 justify-content-end">
-                                            <div class="col-md-2">
-                                                <a href="javascript:void(0)"
-                                                    class="btn btn-darkblue width-max fs-14">Next</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="step step-4 pt-3 -none">
-                                        <p class="fs-20 fw-500 text-blue">Schedule PickUp</p>
-                                        <div class="row my-3 row-gap-3">
-                                            <p class="fs-15 fw-450 text-darkblue">Select PickUp Time Slot</p>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="pickup-date" class="fs-12 fw-300 text-grey3">Select Pickup
-                                                    Date</label>
-                                                <input type="date" class="form-control" id="pickup-date"
-                                                    name="pickup-date" required>
-                                            </div>
-                                            <div class="col-md-4 position-relative">
-                                                <label for="pickup-time" class="fs-12 fw-300 text-grey3">Pickup Time
-                                                    Slot</label>
-                                                <select class="form-select" aria-label="Default select example"
-                                                    name="pickup-time" id="pickup-time" required>
-                                                    <option value=""></option>
-                                                    <option value="0">10:00am - 11:00am</option>
-                                                    <option value="1">11:00am - 12:00pm</option>
-                                                    <option value="2">12:00pm - 1:00pm</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row my-3 mt-4 align-items-start">
-                                            <div class="col-md-3">
-                                                <p class="fs-14 fw-350 text-dark mb-3 mb-md-0">Select Delivery Type</p>
-                                            </div>
-                                            <div class="col-md-9">
-                                                <ul class="p-0 m-0 pb-2 d-flex overflow-x-scroll gap-3">
-                                                    <li class="standard">
-                                                        <input type="radio" name="type" id="standard"
-                                                            autocomplete="off">
-                                                        <label for="standard"
-                                                            class="p-2 br-5 b05 bc-grey4 cursor-pointer"
-                                                            style="width: 220px;">
-                                                            <div class="d-flex align-items-center mb-2">
-                                                                <img src="../assets/img/standard.svg" alt="standard"
-                                                                    height="30px">
-                                                                <span class="fs-15 fw-350 text-grey3">Standard</span>
-                                                            </div>
-                                                            <span class="price fs-26 fw-500 text-dark"><span
-                                                                    class="fw-300 text-grey2 fs-24">$</span> 2000</span>
-                                                            <span class="text-grey3 fs-12 fw-300 d-block">Delivered
-                                                                within 6 Days</span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="express">
-                                                        <input type="radio" name="type" id="express" autocomplete="off">
-                                                        <label for="express"
-                                                            class="p-2 br-5 b05 bc-grey4 cursor-pointer"
-                                                            style="width: 220px;">
-                                                            <div class="d-flex align-items-center mb-2">
-                                                                <img src="../assets/img/express.svg" alt="standard"
-                                                                    height="30px">
-                                                                <span class="fs-15 fw-350 text-grey3">Express</span>
-                                                            </div>
-                                                            <span class="price fs-26 fw-500 text-dark"><span
-                                                                    class="fw-300 text-grey2 fs-24">$</span> 3500</span>
-                                                            <span class="text-grey3 fs-12 fw-300 d-block">Delivered
-                                                                within 3 Days</span>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="row my-3 justify-content-end">
-                                            <div class="col-md-2">
-                                                <a href="javascript:void(0)" id="submit-shipment"
-                                                    class="btn btn-darkblue width-max fs-14" data-bs-toggle="modal" data-bs-target="#success-msg-popup">Place Order</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                    <div class="d-none d-md-block col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+    
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
-                    <div class="card">
-                        <div class="card-body">
-
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <div class="modal fade success-msg-popup" id="success-msg-popup" tabindex="-1"
         aria-labelledby="exampleModalLabel" aria-hidden="true">

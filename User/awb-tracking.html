@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking</title>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/shipment.css">
+
+</head>
+
+<!-- ======= Header ======= -->
+<header id="header1" class="header fixed-top d-flex align-items-center py-2 px-0 p-lg-3" style="height: 75px;">
+    <div class="container d-flex justify-content-between align-items-center px-3" style="height: 60px;">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="../Admin/index.html" class="logo d-none d-lg-flex align-items-center">
+                <img src="../assets/img/logo 1.png" alt="Logo">
+                <span class="d-block fs-24 mt-2 text-blue lx">HPS Shipment</span>
+            </a>
+            <a href="../Admin/index.html" class="logo d-lg-none align-items-center">
+                <img src="../assets/img/logo.png" alt="Logo" style="max-height: 50px;">
+            </a>
+        </div>
+        <nav class="header-nav ms-auto d-flex column-gap-3 column-gap-lg-5">
+            <li class="nav-item"><a href="https://hps.com.sa/" class="fs-16 text-blue hover-darkblue trans-02">Home</a></li>
+            <li class="nav-item"><a href="../User/create-shipment.html" class="fs-16 text-blue hover-darkblue trans-02">Shipment</a></li>
+            <li class="nav-item"><a href="https://hps.com.sa/head.html" class="fs-16 text-blue hover-darkblue trans-02 d-none d-lg-block">Contact</a></li>
+        </nav>
+    </div>
+</header>
+
+<body class="user tracking position-relative overflow-x-hidden" style="padding: 60px 0px 300px;">
+    <!-- Loader -->
+    <div class="loader d-none">
+        <div class="truckWrapper">
+            <div class="truckBody">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 198 93" class="trucksvg">
+                    <path stroke-width="3" stroke="#282828" fill="#F83D3D"
+                        d="M135 22.5H177.264C178.295 22.5 179.22 23.133 179.594 24.0939L192.33 56.8443C192.442 57.1332 192.5 57.4404 192.5 57.7504V89C192.5 90.3807 191.381 91.5 190 91.5H135C133.619 91.5 132.5 90.3807 132.5 89V25C132.5 23.6193 133.619 22.5 135 22.5Z">
+                    </path>
+                    <path stroke-width="3" stroke="#282828" fill="#7D7C7C"
+                        d="M146 33.5H181.741C182.779 33.5 183.709 34.1415 184.078 35.112L190.538 52.112C191.16 53.748 189.951 55.5 188.201 55.5H146C144.619 55.5 143.5 54.3807 143.5 53V36C143.5 34.6193 144.619 33.5 146 33.5Z">
+                    </path>
+                    <path stroke-width="2" stroke="#282828" fill="#282828"
+                        d="M150 65C150 65.39 149.763 65.8656 149.127 66.2893C148.499 66.7083 147.573 67 146.5 67C145.427 67 144.501 66.7083 143.873 66.2893C143.237 65.8656 143 65.39 143 65C143 64.61 143.237 64.1344 143.873 63.7107C144.501 63.2917 145.427 63 146.5 63C147.573 63 148.499 63.2917 149.127 63.7107C149.763 64.1344 150 64.61 150 65Z">
+                    </path>
+                    <rect stroke-width="2" stroke="#282828" fill="#FFFCAB" rx="1" height="7" width="5" y="63" x="187">
+                    </rect>
+                    <rect stroke-width="2" stroke="#282828" fill="#282828" rx="1" height="11" width="4" y="81" x="193">
+                    </rect>
+                    <rect stroke-width="3" stroke="#282828" fill="#DFDFDF" rx="2.5" height="90" width="121" y="1.5"
+                        x="6.5"></rect>
+                    <rect stroke-width="2" stroke="#282828" fill="#DFDFDF" rx="2" height="4" width="6" y="84" x="1">
+                    </rect>
+                </svg>
+            </div>
+            <div class="truckTires">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" class="tiresvg">
+                    <circle stroke-width="3" stroke="#282828" fill="#282828" r="13.5" cy="15" cx="15"></circle>
+                    <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" class="tiresvg">
+                    <circle stroke-width="3" stroke="#282828" fill="#282828" r="13.5" cy="15" cx="15"></circle>
+                    <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+                </svg>
+            </div>
+            <div class="road"></div>
+
+            <svg xml:space="preserve" viewBox="0 0 453.459 453.459" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg" id="Capa_1" version="1.1" fill="#000000" class="lampPost">
+                <path d="M252.882,0c-37.781,0-68.686,29.953-70.245,67.358h-6.917v8.954c-26.109,2.163-45.463,10.011-45.463,19.366h9.993
+c-1.65,5.146-2.507,10.54-2.507,16.017c0,28.956,23.558,52.514,52.514,52.514c28.956,0,52.514-23.558,52.514-52.514
+c0-5.478-0.856-10.872-2.506-16.017h9.992c0-9.354-19.352-17.204-45.463-19.366v-8.954h-6.149C200.189,38.779,223.924,16,252.882,16
+c29.952,0,54.32,24.368,54.32,54.32c0,28.774-11.078,37.009-25.105,47.437c-17.444,12.968-37.216,27.667-37.216,78.884v113.914
+h-0.797c-5.068,0-9.174,4.108-9.174,9.177c0,2.844,1.293,5.383,3.321,7.066c-3.432,27.933-26.851,95.744-8.226,115.459v11.202h45.75
+v-11.202c18.625-19.715-4.794-87.527-8.227-115.459c2.029-1.683,3.322-4.223,3.322-7.066c0-5.068-4.107-9.177-9.176-9.177h-0.795
+V196.641c0-43.174,14.942-54.283,30.762-66.043c14.793-10.997,31.559-23.461,31.559-60.277C323.202,31.545,291.656,0,252.882,0z
+M232.77,111.694c0,23.442-19.071,42.514-42.514,42.514c-23.442,0-42.514-19.072-42.514-42.514c0-5.531,1.078-10.957,3.141-16.017
+h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"></path>
+            </svg>
+        </div>
+    </div>
+    <!-- Footer Photo -->
+    <div class="d-none d-lg-block position-absolute mt-auto overflow-hidden filter z-0" style="width: 100%; bottom:0px">
+        <div class="row">
+            <img src="../assets/img/regbackground2.png" alt="">
+        </div>
+    </div>
+    <div class="d-none d-lg-block position-absolute banner-img" style="width:1000px; right:-22px;">
+        <div class="row overflow-hidden">
+            <img src="../assets/img/banner-img.png" alt="Image" class="image-cover position-relative">
+        </div>
+    </div>
+     <main id="tracking" class="main tracking mt-5">
+         <section class="tracking z-5">
+             <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body pt-3">
+                                <!-- AWB Number Submit Form -->
+                                <form action="#" method="post">
+                                    <div class="awb-number position-relative d-flex flex-column flex-lg-row align-items-lg-center column-gap-3 row-gap-2">
+                                        <label class="text-blue fs-15 fw-450 white-wrap">Track Order by AWB Number :</label>
+                                        <input type="text" class="form-control fs-13 fw-350 br-50 ps-4" id="awbNumber" placeholder="Enter Your AWB Number Here" style="height: 45px;">
+                                        <!-- Desktop Button -->
+                                        <button type="submit" class="btn btn-darkblue fs-13 fw-350 br-50 position-absolute end-0 d-none d-lg-block" style="padding: 12px 20px;">Track Shipment</button>
+                                        <!-- Mobile Button -->
+                                        <button type="submit" class="btn btn-darkblue fs-14 fw-350 br-50 d-lg-none width-max"  style="padding: 8px 25px;">Track Shipment</button>
+                                    </div>
+                                </form>
+                                <!-- Delivery Overview -->
+                                <div class="delivery-overview p-3 pt-2 b05 bc-lightblue3 br-10 my-4">
+                                    <div class="title d-flex justify-content-between align-items-center b05-b bc-grey4 py-2 mb-2">
+                                        <h2 class="text-blue fs-16 fw-500 white-wrap">Delivery Info</h2>
+                                        <span class="fs-10 fw-400 text-green bg-lightgreen br-3" style="padding: 6px 15px;">Delivery Completed</span>
+                                    </div>
+                                    <!-- Delivery Info Details -->
+                                    <div class="row addresses d-flex flex-column flex-lg-row row-gap-4 align-items-lg-center justify-content-md-between">
+                                        <div class="col-md-4 awb-num">
+                                            <p class="fs-12 fw-300 text-grey2">AWB Number</p>
+                                            <p class="fs-15 fw-400 text-dark2">6070623856210</p>
+                                        </div>
+                                        <div class="col-md-4 order-num">
+                                            <p class="fs-12 fw-300 text-grey2">Order Number</p>
+                                            <p class="fs-15 fw-400 text-dark2">test_order_13</p>
+                                        </div>
+                                        <div class="col-md-4 delivery-type">
+                                            <p class="fs-12 fw-300 text-grey2">Delivery Type</p>
+                                            <p class="fs-15 fw-400 text-dark2">Standard</p>
+                                        </div>
+                                        <div class="col-md-4 package-weight">
+                                            <p class="fs-12 fw-300 text-grey2">Package Weight</p>
+                                            <p class="fs-15 fw-400 text-dark2">13 kg</p>
+                                        </div>
+                                        <div class="col-md-4 package-content">
+                                            <p class="fs-12 fw-300 text-grey2">Package Content</p>
+                                            <p class="fs-15 fw-400 text-dark2">Books</p>
+                                        </div>
+                                        <div class="col-md-4 expected-date">
+                                            <p class="fs-12 fw-300 text-grey2">Expected Delivery Date</p>
+                                            <p class="fs-15 fw-400 text-dark2">1-12-2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tracking Process -->
+                                <div class="tracking-process mt-4">
+                                    <p class="fs-16 fw-450 text-darkblue mb-3 d-none d-lg-block">Track Your Package Journey Step-by-Step :</p>
+                                    <p class="fs-15 fw-450 text-darkblue mb-3 d-lg-none">Track Your Package Journey Step-by-Step :</p>
+                                    <!-- Tracking Steps -->
+                                    <div class="tracking-steps ms-lg-4">
+                                        <div class="step d-flex column-gap-4 my-3">
+                                            <div class="icon position-relative">
+                                                <i class="fa-solid fa-circle default text-grey3 position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle inprocess text-blue position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle-check completed text-green position-relative fs-14 z-2 -none"></i>
+                                                <i class="fa-solid fa-circle-xmark error text-red position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle bg fs-26 position-absolute text-lightgreen z-1" style="left: -6px;top: -0.5px;"></i>
+                                            </div>
+                                            <div class="step-details">
+                                                <p class="fs-12 fw-350 text-grey3">23 November 2023, 10:11pm</p>
+                                                <p class="fs-15 fw-450 text-dark2">Order Submitted</p>
+                                                <p class="fs-12 fw-350 text-grey2">White Town Street, Puducherry.</p>
+                                            </div>
+                                        </div>
+                                        <div class="step d-flex column-gap-4 my-3">
+                                            <div class="icon position-relative">
+                                                <i class="fa-solid fa-circle default text-grey3 position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle inprocess text-blue position-relative fs-14 z-2 -none"></i>
+                                                <i class="fa-solid fa-circle-check completed text-green position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle-xmark error text-red position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle bg fs-26 position-absolute text-lightblue2 z-1" style="left: -6px;top: -0.5px;"></i>
+                                            </div>
+                                            <div class="step-details">
+                                                <p class="fs-12 fw-350 text-grey3">24 November 2023, 8:11am</p>
+                                                <p class="fs-15 fw-450 text-dark2">Pick up Task assigned to Delivery Boy</p>
+                                                <p class="fs-12 fw-350 text-grey2">White Town Street, Puducherry.</p>
+                                            </div>
+                                        </div>
+                                        <div class="step d-flex column-gap-4 my-3">
+                                            <div class="icon position-relative">
+                                                <i class="fa-solid fa-circle default text-grey3 position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle inprocess text-blue position-relative fs-14 z-2 -none"></i>
+                                                <i class="fa-solid fa-circle-check completed text-green position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle-xmark error text-red position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle bg fs-26 position-absolute text-lightblue2 z-1" style="left: -6px;top: -0.5px;"></i>
+                                            </div>
+                                            <div class="step-details">
+                                                <p class="fs-12 fw-350 text-grey3">24 November 2023, 10:30am</p>
+                                                <p class="fs-15 fw-450 text-dark2">Shipment Picked</p>
+                                                <p class="fs-12 fw-350 text-grey2">White Town Street, Puducherry.</p>
+                                            </div>
+                                        </div>
+                                        <div class="step d-flex column-gap-4 my-3">
+                                            <div class="icon position-relative">
+                                                <i class="fa-solid fa-circle default text-grey3 position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle inprocess text-blue position-relative fs-14 z-2 -none"></i>
+                                                <i class="fa-solid fa-circle-check completed text-green position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle-xmark error text-red position-relative fs-14 z-2 d-none"></i>
+                                                <i class="fa-solid fa-circle bg fs-26 position-absolute text-lightblue2 z-1" style="left: -6px;top: -0.5px;"></i>
+                                            </div>
+                                            <div class="step-details">
+                                                <p class="fs-12 fw-350 text-grey3">24 November 2023, 1:30pm</p>
+                                                <p class="fs-15 fw-450 text-dark2">Received to HPS Warehouse</p>
+                                                <p class="fs-12 fw-350 text-grey2">HPS Warehouse, Cape Street Damman.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </section>
+     </main>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/confetti.min.js"></script>
+    <script src="../assets/js/confetti.js"></script>
+</body>
+</html>
