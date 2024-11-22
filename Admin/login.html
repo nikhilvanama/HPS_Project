@@ -9,7 +9,8 @@
     <base href="../">
 
     <!-- Favicons -->
-    <link href="../assets/img/small-logo.png" rel="icon">
+    <link href="assets/img/logo 1.png" rel="icon">
+    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -19,12 +20,12 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@10000&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet">
-    <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
     <!-- Swiper JS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -43,18 +44,12 @@
         crossorigin="anonymous"></script>
 
     <!-- Main CSS File -->
-    <!-- <link href="../assets/css/pavan.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/custom.css">
-    <link href="../assets/css/pavan.css" rel="stylesheet">
+    <!-- <link href="assets/css/pavan.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link href="assets/css/pavan.css" rel="stylesheet">
 
     <style>
-        /*.left-log {
-            background: url('../assets/img/login bag.svg');
-            background-size: cover;
-            background-repeat: no-repeat;
-        }*/
-
         /* For mobile phones: */
         @media only screen and (max-width: 768px) {
             .left-log {
@@ -68,6 +63,9 @@
             .login-form section.login-form .col-md-6 .card .form-control {
                 background-color: #ebeef650;
                 border-color: #3454a450;
+            }
+            .login-carousel{
+                display: none !important;
             }
         }
 
@@ -84,22 +82,26 @@
     </style>
 </head>
 
+<body>
+
+</body>
+
 <body class="login-form">
     <section class="login-form overflow-x-hidden">
         <div class="row">
-            <div class="d-none d-md-block left-log d-flex align-items-center justify-content-center bg-lightblue3" style="height: 100vh;">
+            <div class="login-carousel col-12 col-md-6 px-3 px-md-5 left-log d-flex align-items-center justify-content-center bg-lightblue3" style="height: 100vh;">
                 <div style="height: 350px; width: 450px; background: transparent !important;"
                     class="d-flex align-items-center justify-content-center">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="/assets/img/Order ahead-pana.svg" class="object-contain" alt="Slide 1">
+                                <img src="assets/img/order.svg" class="object-contain" alt="Slide 1">
                             </div>
                             <div class="swiper-slide">
-                                <img src="/assets/img/Free shipping-amico.svg" class="object-contain" alt="Slide 2">
+                                <img src="assets/img/shipping.svg" class="object-contain" alt="Slide 2">
                             </div>
                             <div class="swiper-slide">
-                                <img src="../assets/img/Delivery address-bro.svg" class="object-contain" alt="Slide 3">
+                                <img src="assets/img/Delivery address-bro.svg" class="object-contain" alt="Slide 3">
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -112,9 +114,9 @@
                         <div class="card">
                             <div class="card-body pt-4 d-flex flex-column align-items-center ">
                                 <a href="index.html" class="d-flex justify-content-center">
-                                    <img src="/assets/img/logo.png" height="120px" class="object-contain" alt="logo">
+                                    <img src="assets/img/logo.png" height="120px" class="object-contain" alt="logo">
                                 </a>
-                                <h3 class="mt-5 text-dark2">Hello..!</h3>
+                                <h3 class="mt-5 text-dark2">Hello</h3>
                                 <form action="#" method="post" class="w-100 need-focus">
                                     <div class="login-form-card -none">
                                         <h6 class="mb-4 fs-18 fw-450 text-dark2">Please Login to Your Account</h6>
@@ -129,7 +131,7 @@
                                                 name="sender-phn" required>
                                         </div>
                                         <div class="my-3 d-flex justify-content-end align-items-center">
-                                            <a href="../Admin/Login/Forgot-pass.html" class="text-body text-dark2">
+                                            <a href="Admin/Login/Forgot-pass.html" class="text-body text-dark2">
                                                 <small>Forgot password? </small>
                                             </a>
                                         </div>
@@ -138,7 +140,7 @@
                                         </div>
                                         <div class=" my-4">
                                             <a href="javascript:void(0)" class="btn b05 bc-grey3 w-100 fs-14 py-2"><img
-                                                    src="../assets/img/Google.svg" alt="google" width="18px"
+                                                    src="assets/img/Google.svg" alt="google" width="18px"
                                                     class="me-2">Login
                                                 Login with Google</a>
                                         </div>
@@ -215,7 +217,7 @@
                         </div>
                         <!-- <div class="card w-100">
                             <div class="card-body pt-3 d-flex flex-column justify-content-center align-items-center">
-                                <img src="../assets/img/upload.svg" alt="Succesful" class="py-4 fadein-1s">
+                                <img src="assets/img/upload.svg" alt="Succesful" class="py-4 fadein-1s">
                                 <p class="text-center fw-450 text-dark" style="font-size: 36px;">Successfully</p>
                                 <h6 class="mb-3 fs-14 lh-20 fw-350 text-grey2">Your password has been reset successfully</h6>
                                 <a href="javascript:void(0)" class="btn btn-darkblue w-100 fs-14 mt-3">Continue</a>
@@ -230,10 +232,10 @@
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/custom.js"></script>
-    <script src="../assets/js/confetti.min.js"></script>
-    <script src="../assets/js/confetti.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/confetti.min.js"></script>
+    <script src="assets/js/confetti.js"></script>
 
     <script>
         // Login page Swiper
