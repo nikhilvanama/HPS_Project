@@ -269,6 +269,8 @@ li{list-style: none !important;}
 
 .cursor-pointer{cursor: pointer !important;}
 
+.break-word{overflow-wrap: break-word !important;}
+
 /* Transistions */
 
 .trans-02{transition: all 0.2s;}
@@ -852,17 +854,18 @@ div.dt-container .dt-search input:focus{
 
 table.dataTable thead th, table.dataTable thead th b, table.dataTable tfoot th, table.table {
     font-weight: 400;
-    font-size: 16px;
-    color: rgba(115,113,112);
+    font-size: 15px;
+    color: #fff;
     text-align: left !important;
     white-space: nowrap;
     vertical-align: middle;
+    padding-bottom: 5px;
 }
 
 table.dataTable>thead>tr>th, table.dataTable>thead>tr>td {
     padding: 15px 10px 5px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #ebeef650;
+    background-color: #17264A;
 }
 
 table.dataTable>tbody>tr>th, table.dataTable>tbody>tr>td {
@@ -873,6 +876,7 @@ table.dataTable>tbody>tr>th, table.dataTable>tbody>tr>td {
     color: rgba(37,36,36);
     vertical-align: middle;
     text-align: left !important;
+    background-color: transparent;
 }
 
 .dt-paging-button.first, .dt-paging-button.last {
@@ -900,7 +904,7 @@ div.dt-container .dt-paging .dt-paging-button:hover{
 }
 
 .table {
-    --bs-table-hover-bg: #ebeef680;
+    --bs-table-hover-bg: #ebeef685;
 }
 
 div.dt-container div.dt-layout-row:not(.dt-layout-table) {
@@ -911,4 +915,15 @@ div.dt-container div.dt-layout-row:not(.dt-layout-table) {
 
 div.dt-container div.dt-layout-row .dt-layout-start, div.dt-container div.dt-layout-row .dt-layout-end {
     transform: scale(0.9);
+}
+
+/* Card Bg Remove */
+
+.main .card, .main .card .card-body {
+    box-shadow: none;
+    background: transparent;
+}
+
+.datatable tr {
+    background: none !important;
 }

@@ -197,8 +197,8 @@
         </section>
     </main>
 
-    <div class="modal fade orderdetails-popup" id="orderdetails-popup" tabindex="-1"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade orderdetails-popup" id="orderdetails-popup" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
@@ -206,57 +206,338 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
-                    <div class="task-details">
-                        <div class="row">
+                    <div class="order-details">
+                        <!-- Sender Details -->
+                        <div class="row row-gap-3">
+                            <p class="fs-16 fw-450 text-blue">Sender Details</p>
                             <div class="col-md-4">
                                 <div class="row">
                                     <div class="col-md-6 d-flex justify-content-between">
-                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Task ID</p>
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Sender Name</p>
                                         <p class="fs-15 fw-400 text-dark me-2">:</p>
                                     </div>
                                     <div class="col-md-6">
-                                        <a href="javascript:void(0)"
-                                            class="text-dark p-2 bg-lightblue br-5 fs-12 fw-550">TSK - 01</a>
+                                        <p class="fs-15 fw-400 text-dark break-word">Shaik Hanifa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Email Address</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">Hpsinfoadminwebsite@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Phone Number</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">8869556985</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Phone Number (Alt)</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">8695894421</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-8">
                                 <div class="row">
-                                    <div class="col-md-4 d-flex justify-content-between">
-                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Task Name</p>
-                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    <div class="col-md-3 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Address</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
                                     </div>
-                                    <div class="col-md-8">
-                                        <p class="fs-15 fw-400 text-dark">Dashboard Page and Setting Page</p>
+                                    <div class="col-md-9">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">D.no:30-0, White Town
+                                            St.Street,Main Road</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">City</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">Chennai</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">State</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">Puducherry</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Country</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Pin Code</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">569818</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-4">
-                            <div class="col-md-12">
+                        <!-- Recipient Details -->
+                        <div class="row row-gap-3 mt-4">
+                            <p class="fs-16 fw-450 text-blue">Recipient Details</p>
+                            <div class="col-md-4">
                                 <div class="row">
-                                    <div class="col-md-2 d-flex justify-content-between">
-                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Description</p>
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Recipient Name</p>
                                         <p class="fs-15 fw-400 text-dark me-2">:</p>
                                     </div>
-                                    <div class="col-md-10">
-                                        <p class="fs-15 fw-400 text-dark">The structure is built with a robust RCC
-                                            (Reinforced Cement Concrete) frame, providing superior earthquake resistance
-                                            and longevity. The foundation is designed for maximum strength, ensuring
-                                            that the buildings meet the highest safety standards and offer exceptional
-                                            durability</p>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 fw-400 text-dark break-word">Shaik Hanifa</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 mt-3">
+                            <div class="col-md-4">
                                 <div class="row">
-                                    <div class="col-md-2 d-flex justify-content-between">
-                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Activity</p>
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Email Address</p>
                                         <p class="fs-15 fw-400 text-dark me-2">:</p>
                                     </div>
-                                    <div class="col-md-10">
-                                        <p class="fs-15 fw-400 text-dark">Refernce Link :
-                                            https://chatgpt.com/c/77192609-d078-4397-b607-c4a059025021</p>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">Hpsinfoadminwebsite@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Phone Number</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">8869556985</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Phone Number (Alt)</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">8695894421</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-3 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Address</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">D.no:30-0, White Town
+                                            St.Street,Main Road</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">City</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">Chennai</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">State</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">Puducherry</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Country</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Pin Code</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">569818</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Order Details -->
+                        <div class="row row-gap-3 mt-4">
+                            <p class="fs-16 fw-450 text-blue">Order Details</p>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Package Weight</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 fw-400 text-dark break-word">15 kg</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Package Value</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">15,000 /-</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Package Content</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">Books</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Length</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">12 cm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Breadth</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">15 cm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Height</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">20 cm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Volume</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">150 cm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Payment Mode</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">Cash on Delivery</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">PickUp date</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">24-11-2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">PickUp Time</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">2:00PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Delivery Type</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">Standard(200 )</p>
                                     </div>
                                 </div>
                             </div>
@@ -264,7 +545,7 @@
                     </div>
                 </div>
                 <div class="modal-footer b0 pt-0">
-                    <button type="button" class="btn-black fs-14 fw-300 b05 br-5 py-2 px-3"
+                    <button type="button" class="btn-dark bg-light fs-14 fw-300 b05 br-5 py-2 px-3"
                         data-bs-dismiss="modal">Close</button>
                     <!-- <button type="button" class="btn-green2 fs-14 fw-300 b05 bc-red1 br-5 py-2 px-3">Create
                     Task</button> -->
