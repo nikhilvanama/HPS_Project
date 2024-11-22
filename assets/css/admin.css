@@ -156,3 +156,11 @@ table tr td.order-status .large-badge.cancelled {
     color: #ff304d;
     background-color: #ffeaed;
 }
+
+/* Orders page */
+
+.orders main.orders .filters a.active {
+    font-weight: 400 !important;
+    color: #fff !important;
+    background-color: #3454a4 !important;
+}
