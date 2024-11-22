@@ -106,20 +106,53 @@
 
 /* Customers Page */
 
-.customers section.customers-table .head .customers-search .form-control {
+main .head .search-btn .form-control {
     height: 45px !important;
-    width: 300px !important;
+    width: 350px !important;
 }
 
-.customers-table .table-responsive .dt-search {
+/* DataTable Search Display None */
+
+.customers-table .table-responsive .dt-search, .orders-table .table-responsive .dt-search {
     display: none;
 }
 
-/*  */
+/* Tracking Page */
+/* AWB Tracking */
 
-@media (max-width: 767px){
-    .login-form section.login-form .col-md-6 .card .card-body {
-        background-color: transparent !important;
-        box-shadow: none !important;
-    }
+.tracking main.tracking section.tracking .tracking-process .tracking-steps .step .icon::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: rgba(153,152,151,0.25);
+    z-index: 0;
+}
+
+.orders main.orders section.orders-table table tr td.order-status .large-badge.in-transit {
+    color: #3454a4;
+    background-color: #ebeef6;
+}
+
+.orders main.orders section.orders-table table tr td.order-status .large-badge.order-created {
+    color: #3454a4;
+    background-color: #ebeef6;
+}
+
+.orders main.orders section.orders-table table tr td.order-status .large-badge.delivered {
+    color: rgba(48, 190, 130, 1);
+    background-color: rgba(224, 245, 236, 1);
+}
+
+.orders main.orders section.orders-table table tr td.order-status .large-badge.returned {
+    color: rgba(255, 166, 0, 1);
+    background-color: rgba(255, 242, 217, 1);
+}
+
+.orders main.orders section.orders-table table tr td.order-status .large-badge.cancelled {
+    color: #ff304d;
+    background-color: #ffeaed;
 }

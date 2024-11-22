@@ -17,16 +17,23 @@ jQuery(document).ready(function () {
       }
     });
 
-  //Attendance Search JS
+  //Customers Search JS
   $('.customers-table #customers-search').on('keyup', function () {
     var searchinput = $('.customers-table #customers-search').val();
     $('.customers-table .table-responsive .dt-search input').val(searchinput);
     $('.customers-table .table-responsive .dt-search input').trigger('search')
   })
 
+  //Orders Search JS
+  $('.orders-table #customers-search').on('keyup', function () {
+    var searchinput = $('.orders-table #customers-search').val();
+    $('.orders-table .table-responsive .dt-search input').val(searchinput);
+    $('.orders-table .table-responsive .dt-search input').trigger('search')
+  })
+
   // Data Table intialize
   $('.datatable').DataTable()
-  
+
 })
 
 //  picture Update

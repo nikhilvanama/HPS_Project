@@ -686,7 +686,7 @@ input:-internal-autofill-selected {
     }
 
     #main{
-        margin-top: 80px;
+        margin-top: 90px;
         left: 0px !important;
     }
 
@@ -747,6 +747,69 @@ input:-internal-autofill-selected {
     .toggle-sidebar .sidebar .sidebar-nav .index-icon .main-icon{
         display: none;
     }
+}
+
+/* Badge */
+
+.badge{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 6px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.large-badge{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 450;
+    padding: 6px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+/* Global Dropdowns */
+
+.menu .dropdown-menu-arrow::before {
+    display: none;
+}
+
+ .menu ul.dropdown-menu {
+    padding: 0px;
+}
+
+.menu .dropdown-menu .dropdown-item:hover {
+    background-color: #e1e5f1;
+    position: relative;
+    color: #3454a4 !important;
+}
+/* Hover dropitem Before */
+
+.menu .dropdown-menu .dropdown-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    display: none;
+    background-color: #3454a4;
+    transition: all 0.3s;
+}
+
+.menu .dropdown-menu .dropdown-item:hover::before {
+    display: block;
+}
+/* Hover drop-item Orange, black icon Change */
+.menu .dropdown-menu .dropdown-item:hover>img.black-icon {
+    display: none;
+}
+
+.menu .dropdown-menu .dropdown-item:hover>img.orange-icon {
+    display: block;
 }
 
 /* Data Tables */
