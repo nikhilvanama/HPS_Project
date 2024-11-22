@@ -60,10 +60,11 @@
     <!-- Main CSS File -->
     <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="../assets/css/admin.css" rel="stylesheet">
     
 </head>
 
-<body class="customers">
+<body class="index customers">
     <!-- Header -->
     <section id="header"></section>
 
@@ -71,24 +72,26 @@
     <section id="sidebar"></section>
 
     <!-- Main -->
-     <main class="main customers bg-lightblue3" id="main">
-        <section class="customers-table-section">
+     <main class="main customers" id="main">
+        <section class="customers-table">
             <div class="row">
                 <div class="col-12">
-                    <div class="card">
+                    <div class="card pt-3">
                         <div class="card-body">
-                            <h3 class="fs-22 fw-500 text-dark mt-2">Customers</h3>
-                            <div class="head d-flex justify-content-end mt-3">
-                                <!-- <div class="search d-flex align-items-center">
-                                    <input type="text" id="att-emp-search" placeholder="Search by emp Id, Name, Dept" class="form-control fs-14 fw-350 bc-grey3 b05" style="height: 45px; width:300px;padding-left:40px">
+                            <!-- <h3 class="fs-22 fw-500 text-dark mt-2">Customers</h3> -->
+                            <div class="head d-flex justify-content-between mt-3">
+                                <div class="customers-search d-flex align-items-center">
+                                    <input type="text" id="customers-search" placeholder="Search by Name, email, num" class="form-control fs-14 fw-350 bc-grey3 b05 ps-5">
                                     <i class="fa-solid fa-search text-grey2 fs-15 position-absolute ms-3 mt-1"></i>
-                                </div> -->
+                                </div>
                                 <div class="buttons">
                                     <!-- <input type="text" id="datepicker2" value="11/4/2024" class="datepicker2 br-7 b05 bc-grey3 text-dark fs-14 width-max cursor-pointer white-wrap me-2 ls-1" style="padding-left: 40px ;"> -->
-                                    <a href="javascript:void(0)" class="csv-btn btn d-inline-block br-7 b05 bc-dark1 bg-dark1 text-light text-center fs-14 width-max cursor-pointer white-wrap me-2">
+                                    <a href="javascript:void(0)" class="csv-btn btn d-inline-block br-7 bg-dark1 text-light text-center fs-14 width-max cursor-pointer white-wrap me-2">
                                         <span class="d-inline-block position-relative cursor-pointer">Export CSV</span>
                                     </a>
-
+                                    <a href="javascript:void(0)" class="pdf-btn btn d-inline-block br-7 bg-blue text-light text-center fs-14 width-max cursor-pointer white-wrap">
+                                        <span class="d-inline-block position-relative cursor-pointer">Export PDF</span>
+                                    </a>
                                 </div>
                             </div>
                             <div class="table-responsive customers-table mt-3">
@@ -99,6 +102,7 @@
                                         <th>Name</th>
                                         <th>E-Mail</th>
                                         <th>Number</th>
+                                        <th>Alternate Number</th>
                                         <th>Address</th>
                                         <th>Action</th>
                                       </tr>
@@ -113,6 +117,9 @@
                                             </td>
                                             <td>
                                                 seldom@gmail.com
+                                            </td>
+                                            <td>
+                                                9412345678
                                             </td>
                                             <td>
                                                 9412345678
@@ -147,6 +154,7 @@
                                             <td>
                                                 9412345678
                                             </td>
+                                            <td>-</td>
                                             <td>
                                                 Anantapur
                                             </td>
@@ -173,6 +181,9 @@
                                             </td>
                                             <td>
                                                 seldom@gmail.com
+                                            </td>
+                                            <td>
+                                                9412345678
                                             </td>
                                             <td>
                                                 9412345678
@@ -208,6 +219,9 @@
                                                 9412345678
                                             </td>
                                             <td>
+                                                9412345678
+                                            </td>
+                                            <td>
                                                 Guntur
                                             </td>
                                             <td>
@@ -237,6 +251,7 @@
                                             <td>
                                                 9412345678
                                             </td>
+                                            <td>-</td>
                                             <td>
                                                 Hydrabad
                                             </td>
@@ -267,6 +282,7 @@
                                             <td>
                                                 9412345678
                                             </td>
+                                            <td>-</td>
                                             <td>
                                                 Banglore
                                             </td>

@@ -16,8 +16,32 @@ jQuery(document).ready(function () {
         $(this).siblings('label').removeClass('label-transform');
       }
     });
+
+  //Attendance Search JS
+  $('.customers-table #customers-search').on('keyup', function () {
+    var searchinput = $('.customers-table #customers-search').val();
+    $('.customers-table .table-responsive .dt-search input').val(searchinput);
+    $('.customers-table .table-responsive .dt-search input').trigger('search')
+  })
+
+  // Data Table intialize
+  $('.datatable').DataTable()
   
 })
+
+//  picture Update
+
+if (jQuery('#employeephoto').length > 0) {
+  employeephoto.onchange = evt => {
+    const [file] = employeephoto.files
+    if (file) {
+      dummyprofile.src = URL.createObjectURL(file)
+    }
+    else {
+      dummyprofile.src = '../assets/img/Employees/Profile-Photo.svg'
+    }
+  }
+}
 
 // Confittie JS
 

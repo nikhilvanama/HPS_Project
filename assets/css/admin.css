@@ -1,0 +1,116 @@
+/* Create Shipment Page */
+
+.create-shipment section.create-shipment .wizard-form .step {
+    width: max-content;
+    padding-left: 75px;
+}
+
+.create-shipment section.create-shipment .wizard-form .step .status {
+    background-color: rgba(153, 152, 151, 0.2);
+}
+
+.create-shipment section.create-shipment .wizard-form .step .status i.icon,
+.create-shipment section.create-shipment .wizard-form .step .step-name .title {
+    color: rgba(115, 113, 112, 1);
+}
+
+.create-shipment section.create-shipment .wizard-form .step .status i.fa-check {
+    display: none;
+}
+
+.create-shipment section.create-shipment .wizard-form .step.active .status {
+    background-color: #ebeef6;
+}
+
+.create-shipment section.create-shipment .wizard-form .step.active .status i.icon,
+.create-shipment section.create-shipment .wizard-form .step.active .step-name .title,
+.create-shipment section.create-shipment .wizard-form .step.done .step-name .title {
+    color: #3454a4;
+}
+
+.create-shipment section.create-shipment .wizard-form .step.done .status {
+    background-color: #ebeef6;
+}
+
+.create-shipment section.create-shipment .wizard-form .step.done .status i.icon {
+    display: none;
+}
+
+.create-shipment section.create-shipment .wizard-form .step.done .status i.fa-check {
+    display: block;
+}
+
+.create-shipment section.create-shipment .wizard-form .line:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: -95px;
+    width: 85px;
+    height: 4px;
+    border-radius: 5px;
+    z-index: 0;
+    background-color: rgba(153, 152, 151, 0.5);
+}
+
+.create-shipment section.create-shipment .wizard-form .step.done:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 105%;
+    width: 85px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #3454a4;
+    z-index: 5;
+    animation: WidthOut 2.5s linear;
+}
+
+.create-shipment section.create-shipment .wizard-form .step.step-4::before {
+    display: none;
+}
+
+.create-shipment section.create-shipment .shipment-form .step .row.row-gap-3 label {
+    position: absolute;
+    top: auto;
+    left: 30px;
+    bottom: 13px;
+    transform: translateY(2px);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.create-shipment section.create-shipment .shipment-form .step .row input.form-control,
+.create-shipment section.create-shipment .shipment-form .step .row select.form-select {
+    height: 40px;
+    font-weight: 350;
+    border-radius: 3px;
+}
+
+.create-shipment section.create-shipment .shipment-form .step .row ul input[type="radio"] {
+    display: none;
+}
+
+.create-shipment section.create-shipment .shipment-form .step .row ul input[type="radio"]:checked+label {
+    color: #3454a4 !important;
+    border-color: #3454a4 !important;
+    background-color: #ebeef6;
+}
+
+.create-shipment section.create-shipment .shipment-form .step .row ul input[type="radio"]:checked+label span {
+    color: #3454a4 !important;
+}
+
+
+.create-shipment section.create-shipment .shipment-form option {
+    font-size: 10px;
+}
+
+/* Customers Page */
+
+.customers section.customers-table .head .customers-search .form-control {
+    height: 45px !important;
+    width: 300px !important;
+}
+
+.customers-table .table-responsive .dt-search {
+    display: none;
+}
