@@ -1,0 +1,8 @@
+.eye {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  .pass-eye {
+    width: 60% !important;
+  }
