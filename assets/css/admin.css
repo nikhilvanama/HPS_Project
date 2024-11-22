@@ -113,7 +113,7 @@ main .head .search-btn .form-control {
 
 /* DataTable Search Display None */
 
-.customers-table .table-responsive .dt-search, .orders-table .table-responsive .dt-search {
+.customers-table .table-responsive .dt-search, .orders-table .table-responsive .dt-search, .requests-table .table-responsive .dt-search {
     display: none;
 }
 
@@ -132,27 +132,27 @@ main .head .search-btn .form-control {
     z-index: 0;
 }
 
-.orders main.orders section.orders-table table tr td.order-status .large-badge.in-transit {
+table tr td.order-status .large-badge.in-transit {
     color: #3454a4;
     background-color: #ebeef6;
 }
 
-.orders main.orders section.orders-table table tr td.order-status .large-badge.order-created {
+table tr td.order-status .large-badge.order-created {
     color: #3454a4;
     background-color: #ebeef6;
 }
 
-.orders main.orders section.orders-table table tr td.order-status .large-badge.delivered {
+table tr td.order-status .large-badge.delivered {
     color: rgba(48, 190, 130, 1);
     background-color: rgba(224, 245, 236, 1);
 }
 
-.orders main.orders section.orders-table table tr td.order-status .large-badge.returned {
+table tr td.order-status .large-badge.returned {
     color: rgba(255, 166, 0, 1);
     background-color: rgba(255, 242, 217, 1);
 }
 
-.orders main.orders section.orders-table table tr td.order-status .large-badge.cancelled {
+table tr td.order-status .large-badge.cancelled {
     color: #ff304d;
     background-color: #ffeaed;
 }

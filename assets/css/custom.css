@@ -919,11 +919,11 @@ div.dt-container div.dt-layout-row .dt-layout-start, div.dt-container div.dt-lay
 
 /* Card Bg Remove */
 
-.main .card, .main .card .card-body {
+/* .main .card, .main .card .card-body {
     box-shadow: none;
     background: transparent;
 }
 
 .datatable tr {
     background: none !important;
-}
+} */

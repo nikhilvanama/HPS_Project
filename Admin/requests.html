@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
+
     <title>Requests</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <base href="../">
-  
+
     <!-- Favicons -->
     <link href="../assets/img/small-logo.png" rel="icon">
     <!-- <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  
+
     <!-- Vendor CSS Files -->
     <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  
+
     <!-- Box Icons CDN -->
     <script src="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/dist/boxicons.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
-  
+
     <!-- JQuery CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 
     <!-- Fancy box CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Swiper JS CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  
+
     <!-- Data Tables -->
     <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
-    
+
     <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -62,7 +74,7 @@
     <link href="../assets/css/custom.css" rel="stylesheet">
     <link href="../assets/css/admin.css" rel="stylesheet">
     <link href="../assets/css/pavan.css" rel="stylesheet">
-    
+
 </head>
 
 <body class="index requests">
@@ -73,24 +85,27 @@
     <section id="sidebar"></section>
 
     <!-- Main -->
-     <main class="main requests" id="main">
-        <section class="requests-sec">
+    <main class="main requests" id="main">
+        <section class="requests-table">
             <div class="row">
                 <div class="col-12">
                     <div class="card pt-3">
                         <div class="card-body">
                             <!-- <h3 class="fs-22 fw-500 text-dark mt-2">Customers</h3> -->
-                            <div class="row row-gap-3 head d-flex justify-content-between">
-                                <div class="col-12 col-md-6 customers-search d-flex align-items-center">
-                                    <input type="text" id="customers-search" placeholder="Search by Name, status, AWD" class="form-control fs-14 fw-350 bc-grey3 b05 ps-5">
+                            <div class="row row-gap-3 head d-flex justify-content-between align-items-center">
+                                <div class="col-12 col-md-6 search-btn requests-search d-flex align-items-center">
+                                    <input type="text" id="requests-search" placeholder="Search by Name, AWD no"
+                                        class="form-control fs-14 fw-350 bc-grey3 b05 ps-5">
                                     <i class="fa-solid fa-search text-grey2 fs-15 position-absolute ms-3 mt-1"></i>
                                 </div>
-                                <div class="col-12 col-md-6 buttons d-flex justify-content-md-end">
+                                <div class="col-12 col-md-6 buttons d-flex justify-content-md-end align-items-center">
                                     <!-- <input type="text" id="datepicker2" value="11/4/2024" class="datepicker2 br-7 b05 bc-grey3 text-dark fs-14 width-max cursor-pointer white-wrap me-2 ls-1" style="padding-left: 40px ;"> -->
-                                    <a href="javascript:void(0)" class="csv-btn btn d-inline-block br-7 bg-dark1 text-light text-center fs-14 width-max cursor-pointer white-wrap me-2">
+                                    <a href="javascript:void(0)"
+                                        class="csv-btn btn d-inline-block br-7 bg-dark1 text-light text-center fs-14 width-max cursor-pointer white-wrap me-2">
                                         <span class="d-inline-block position-relative cursor-pointer">Export CSV</span>
                                     </a>
-                                    <a href="javascript:void(0)" class="pdf-btn btn d-inline-block br-7 bg-blue text-light text-center fs-14 width-max cursor-pointer white-wrap">
+                                    <a href="javascript:void(0)"
+                                        class="pdf-btn btn d-inline-block br-7 bg-blue text-light text-center fs-14 width-max cursor-pointer white-wrap">
                                         <span class="d-inline-block position-relative cursor-pointer">Export PDF</span>
                                     </a>
                                 </div>
@@ -98,258 +113,75 @@
                             <div class="table-responsive requests-table mt-3">
                                 <table class="table datatable table-hover requests-table">
                                     <thead>
-                                      <tr>
-                                        <th>S.No</th>
-                                        <th>Order date</th>
-                                        <th>AWB Number</th>
-                                        <th>Sender Name</th>
-                                        <th>Ph-Number</th>
-                                        <th>source</th>
-                                        <th>destination</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                      </tr>
+                                        <tr>
+                                            <th>S.No</th>
+                                            <th>Order Date</th>
+                                            <th>AWB Number</th>
+                                            <th>Sender Name</th>
+                                            <th>Phone Number</th>
+                                            <th>Source</th>
+                                            <th>Destination</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>
                                                 01
                                             </td>
-                                            <td>
+                                            <td class="order-date">
                                                 22/11/2024
                                             </td>
-                                            <td>
+                                            <td class="awb-no">
                                                 123456
                                             </td>
-                                            <td>
+                                            <td class="sender-name">
                                                 Pavan
                                             </td>
-                                            <td>
+                                            <td class="phn-number">
                                                 9412345678
                                             </td>
-                                            <td>
+                                            <td class="source">
                                                 transport
                                             </td>
-                                            <td>
+                                            <td class="destination">
                                                 Mangalagiri
                                             </td>
-                                            <td>
-                                                <div class="green m-2">
-                                                    <p class="large-badge bg-lightgreen2 width-max">
-                                                        <span class="ms-1 text-green2">Completed</span>
-                                                    </p>
-                                                </div>
+                                            <td class="order-status">
+                                                <p class="large-badge order-created width-max">
+                                                    <span>Order Created</span>
+                                                </p>
+                                                <p class="large-badge in-transit width-max d-none">
+                                                    <span>In-Transit</span>
+                                                </p>
+                                                <p class="large-badge delivered width-max d-none">
+                                                    <span>Delivered</span>
+                                                </p>
+                                                <p class="large-badge returned width-max d-none">
+                                                    <span>Returned</span>
+                                                </p>
+                                                <p class="large-badge cancelled width-max d-none">
+                                                    <span>Cancelled</span>
+                                                </p>
                                             </td>
                                             <td>
                                                 <div class="menu d-flex align-items-center justify-content-center">
-                                                    <a class="icon p-1 px-3 me-3" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-ellipsis-vertical text-dark"></i></a>
+                                                    <a class="icon p-1 px-3 me-3" href="#" data-bs-toggle="dropdown"><i
+                                                            class="fa-solid fa-ellipsis text-dark"></i></a>
                                                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#request-cancel-popup"><i class="fa-solid fa-xmark me-2 me-2 fs-12"></i> Cancel</a></li>
-                                                     <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
+                                                        <li><a class="dropdown-item trans-03 text-grey"
+                                                                href="javascript:void(0)" data-bs-toggle="modal"
+                                                                data-bs-target="#orderdetails-popup"><i
+                                                                    class="fa-solid fa-file-invoice fs-14"></i>
+                                                                View Details</a></li>
+                                                        <li><a class="dropdown-item trans-03 text-grey"
+                                                                href="javascript:void(0)" data-bs-toggle="modal"
+                                                                data-bs-target="#requestcancel-popup"><i
+                                                                    class="fa-solid fa-ban fs-14"></i> Cancel
+                                                                Order</a></li>
                                                     </ul>
-                                                </div>    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                01
-                                            </td>
-                                            <td>
-                                                22/11/2024
-                                            </td>
-                                            <td>
-                                                123456
-                                            </td>
-                                            <td>
-                                                Pavan
-                                            </td>
-                                            <td>
-                                                9412345678
-                                            </td>
-                                            <td>
-                                                transport
-                                            </td>
-                                            <td>
-                                                Mangalagiri
-                                            </td>
-                                            <td>
-                                                <div class="blue m-2">
-                                                    <p class="large-badge bg-lightblue width-max">
-                                                        <span class="ms-1 text-blue1">Processing</span>
-                                                    </p>
                                                 </div>
-                                            </td>
-                                            <td>
-                                                <div class="menu d-flex align-items-center justify-content-center">
-                                                    <a class="icon p-1 px-3 me-3" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-ellipsis-vertical text-dark"></i></a>
-                                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#request-cancel-popup"><i class="fa-solid fa-xmark me-2 me-2 fs-12"></i> Cancel</a></li>
-                                                     <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
-                                                    </ul>
-                                                </div>    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                01
-                                            </td>
-                                            <td>
-                                                22/11/2024
-                                            </td>
-                                            <td>
-                                                123456
-                                            </td>
-                                            <td>
-                                                Pavan
-                                            </td>
-                                            <td>
-                                                9412345678
-                                            </td>
-                                            <td>
-                                                transport
-                                            </td>
-                                            <td>
-                                                Mangalagiri
-                                            </td>
-                                            <td>
-                                                <div class="yellow m-2">
-                                                    <p class="large-badge bg-lightyellow width-max">
-                                                        <span class="ms-1 text-yellow">Pending</span>
-                                                    </p>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="menu d-flex align-items-center justify-content-center">
-                                                    <a class="icon p-1 px-3 me-3" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-ellipsis-vertical text-dark"></i></a>
-                                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#request-cancel-popup"><i class="fa-solid fa-xmark me-2 me-2 fs-12"></i> Cancel</a></li>
-                                                     <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
-                                                    </ul>
-                                                </div>    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                01
-                                            </td>
-                                            <td>
-                                                22/11/2024
-                                            </td>
-                                            <td>
-                                                123456
-                                            </td>
-                                            <td>
-                                                Pavan
-                                            </td>
-                                            <td>
-                                                9412345678
-                                            </td>
-                                            <td>
-                                                transport
-                                            </td>
-                                            <td>
-                                                Mangalagiri
-                                            </td>
-                                            <td>
-                                                <div class="black m-2">
-                                                    <p class="large-badge bg-lightdark1 width-max">
-                                                        <span class="ms-1 text-dark">Not Started</span>
-                                                    </p>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="menu d-flex align-items-center justify-content-center">
-                                                    <a class="icon p-1 px-3 me-3" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-ellipsis-vertical text-dark"></i></a>
-                                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#request-cancel-popup"><i class="fa-solid fa-xmark me-2 me-2 fs-12"></i> Cancel</a></li>
-                                                     <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
-                                                    </ul>
-                                                </div>    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                01
-                                            </td>
-                                            <td>
-                                                22/11/2024
-                                            </td>
-                                            <td>
-                                                123456
-                                            </td>
-                                            <td>
-                                                Pavan
-                                            </td>
-                                            <td>
-                                                9412345678
-                                            </td>
-                                            <td>
-                                                transport
-                                            </td>
-                                            <td>
-                                                Mangalagiri
-                                            </td>
-                                            <td>
-                                                <div class="red m-2">
-                                                    <p class="large-badge bg-lightred1 width-max">
-                                                        <span class="ms-1 text-red1">Cancelled</span>
-                                                    </p>
-                                                </div>
-                                                
-                                            </td>
-                                            <td>
-                                                <div class="menu d-flex align-items-center justify-content-center">
-                                                    <a class="icon p-1 px-3 me-3" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-ellipsis-vertical text-dark"></i></a>
-                                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#request-cancel-popup"><i class="fa-solid fa-xmark me-2 me-2 fs-12"></i> Cancel</a></li>
-                                                     <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
-                                                    </ul>
-                                                </div>    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                01
-                                            </td>
-                                            <td>
-                                                22/11/2024
-                                            </td>
-                                            <td>
-                                                123456
-                                            </td>
-                                            <td>
-                                                Pavan
-                                            </td>
-                                            <td>
-                                                9412345678
-                                            </td>
-                                            <td>
-                                                transport
-                                            </td>
-                                            <td>
-                                                Mangalagiri
-                                            </td>
-                                            <td>
-                                                <div class="purple m-2">
-                                                    <p class="large-badge bg-lightpurple width-max">
-                                                        <span class="ms-1 text-purple">Ongoing</span>
-                                                    </p>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="menu d-flex align-items-center justify-content-center">
-                                                    <a class="icon p-1 px-3 me-3" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-ellipsis-vertical text-dark"></i></a>
-                                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
-                                                      <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#request-cancel-popup"><i class="fa-solid fa-xmark me-2 fs-12"></i> Cancel</a></li>
-                                                     <li><a class="dropdown-item trans-03 text-grey" href="javascript:void(0)"><i class="fa-solid fa-eye me-2 fs-12"></i> View Details</a></li>
-                                                    </ul>
-                                                </div>    
                                             </td>
                                         </tr>
                                     </tbody>
@@ -360,68 +192,445 @@
                 </div>
             </div>
         </section>
-     </main>
+    </main>
 
-     <!-- request-cancel-popup -->
-    <div class="modal fade request-cancel-popup" id="request-cancel-popup" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-dark fw-500">Cancel Order</h5>
-                <button type="button" class="btn-close request-cancel-popup" data-bs-dismiss="modal" aria-label="Close">
-                </button>
-            </div>
-            <div class="modal-body bg-light">
-                <div class="cancel-details">
-                    <div class="row order d-flex align-items-center my-3">
-                        <div class="col-4 d-flex justify-content-between">
-                            <p class="fs-15 fw-400 text-grey2 me-4 white-wrap">Sender Name</p>
-                            <p class="fs-15 fw-400 text-dark me-4 white-wrap">:</p>
+    <div class="modal fade orderdetails-popup" id="orderdetails-popup" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark fw-500">Order Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-light">
+                    <div class="order-details">
+                        <!-- Sender Details -->
+                        <div class="row row-gap-3">
+                            <p class="fs-16 fw-450 text-blue">Sender Details</p>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Sender Name</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 fw-400 text-dark break-word">Shaik Hanifa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Email Address</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">Hpsinfoadminwebsite@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Phone Number</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">8869556985</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Phone Number (Alt)</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">8695894421</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-3 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Address</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">D.no:30-0, White Town
+                                            St.Street,Main Road</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">City</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">Chennai</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">State</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">Puducherry</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Country</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Pin Code</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">569818</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-8">
-                            <p class="fs-15 fw-400 text-dark me-4 white-wrap">Pavan</p>
+                        <!-- Recipient Details -->
+                        <div class="row row-gap-3 mt-4">
+                            <p class="fs-16 fw-450 text-blue">Recipient Details</p>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Recipient Name</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 fw-400 text-dark break-word">Shaik Hanifa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Email Address</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">Hpsinfoadminwebsite@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Phone Number</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">8869556985</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Phone Number (Alt)</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">8695894421</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-3 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Address</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">D.no:30-0, White Town
+                                            St.Street,Main Road</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">City</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">Chennai</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">State</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">Puducherry</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Country</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-14 fw-400 text-grey2 white-wrap">Pin Code</p>
+                                        <p class="fs-14 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-14 lh-18 fw-400 text-dark break-word">569818</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row order d-flex align-items-center my-3">
-                        <div class="col-4 d-flex justify-content-between">
-                            <p class="fs-15 fw-400 text-grey2 me-4 white-wrap">AWB Number</p>
-                            <p class="fs-15 fw-400 text-dark me-4 white-wrap">:</p>
-                        </div>
-                        <div class="col-8">
-                            <p class="fs-15 fw-400 text-dark me-4 white-wrap">12345678</p>
-                        </div>
-                    </div>
-                    <div class="row order d-flex align-items-center my-3">
-                        <div class="col-4 d-flex justify-content-between">
-                            <p class="fs-15 fw-400 text-grey2 me-4 white-wrap">Order Number</p>
-                            <p class="fs-15 fw-400 text-dark me-4 white-wrap">:</p>
-                        </div>
-                        <div class="col-8">
-                            <p class="fs-15 fw-400 text-dark me-4 white-wrap">12345678</p>
-                        </div>
-                    </div>
-                    <div class="row holidaydate d-flex align-items-center my-3">
-                        <div class="col-4 d-flex justify-content-between">
-                            <p class="fs-15 fw-400 text-grey2 me-4 white-wrap">Order Date </p>
-                            <p class="fs-15 fw-400 text-dark me-4">:</p>
-                        </div>
-                        <div class="col-8">
-                            <p class="fs-15 fw-400 text-dark me-4 white-wrap">22-11-2024</p>
+                        <!-- Order Details -->
+                        <div class="row row-gap-3 mt-4">
+                            <p class="fs-16 fw-450 text-blue">Order Details</p>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Package Weight</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 fw-400 text-dark break-word">15 kg</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Package Value</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">15,000 /-</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Package Content</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">Books</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Length</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">12 cm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Breadth</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">15 cm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Height</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">20 cm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Volume</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">150 cm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Payment Mode</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">Cash on Delivery</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">PickUp date</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">24-11-2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">PickUp Time</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">2:00PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Delivery Type</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fs-15 lh-18 fw-400 text-dark break-word">Standard(200 )</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer b0">
-                <button type="button" class="btn bg-blue text-light fs-14 fw-300 b05 br-5 py-2 px-3"
-                    data-bs-dismiss="modal">Cancel</button>
-                <button type="button"
-                    class="btn-red fs-14 fw-300 b05 br-5 py-2 px-3">Delete</button>
+                <div class="modal-footer b0 pt-0">
+                    <button type="button" class="btn bg-dark text-light fs-14 fw-300 b05 br-5 py-2 px-3"
+                        data-bs-dismiss="modal">Cancel</button>
+                    <!-- <button type="button" class="btn-green2 fs-14 fw-300 b05 bc-red1 br-5 py-2 px-3">Create
+                 Task</button> -->
+                </div>
             </div>
         </div>
     </div>
-</div>
 
+    <!-- request-cancel-popup -->
+    <div class="modal fade requestcancel-popup" id="requestcancel-popup" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark fw-500">Cancel Order</h5>
+                    <button type="button" class="btn-close request-cancel-popup" data-bs-dismiss="modal"
+                        aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <div class="cancel-details">
+                        <div class="row row-gap-3">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-5 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Sender Name</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="fs-15 fw-400 text-dark break-word">Shaik Hanifa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-5 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">AWB Number</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="fs-15 fw-400 text-dark break-word">27278272782</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-5 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Order Number</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="fs-15 fw-400 text-dark break-word">254684</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-5 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Order Date</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="fs-15 fw-400 text-dark break-word">Shaik Hanifa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-5 d-flex justify-content-between">
+                                        <p class="fs-15 fw-400 text-grey2 white-wrap">Amount</p>
+                                        <p class="fs-15 fw-400 text-dark me-2">:</p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="fs-15 fw-400 text-dark break-word">2000 /-</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer b0">
+                    <button type="button" class="btn bg-dark text-light fs-14 fw-300 b05 br-5 py-2 px-3"
+                        data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger fs-14 fw-300 b05 br-5 py-2 px-3">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -430,4 +639,5 @@
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/custom.js"></script>
 </body>
+
 </html>
