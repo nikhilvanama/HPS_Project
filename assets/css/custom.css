@@ -6,6 +6,7 @@ body {
     font-family: "Lexend", sans-serif;
     background: #ebeef650;
     color: #444444;
+    overflow-x: hidden;
 }
 
 body.user {
@@ -623,8 +624,8 @@ input:-internal-autofill-selected {
 }
 
 #main, #footer {
-    width: 80%;
-    left: 25px;
+    width: 83%;
+    left: 0;
     right: auto;
     position: relative;
 }
@@ -837,4 +838,14 @@ div.dt-container .dt-paging .dt-paging-button:hover{
 
 .table {
     --bs-table-hover-bg: #ebeef680;
+}
+
+div.dt-container div.dt-layout-row:not(.dt-layout-table) {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+div.dt-container div.dt-layout-row .dt-layout-start, div.dt-container div.dt-layout-row .dt-layout-end {
+    transform: scale(0.9);
 }

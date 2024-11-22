@@ -114,3 +114,12 @@
 .customers-table .table-responsive .dt-search {
     display: none;
 }
+
+/*  */
+
+@media (max-width: 767px){
+    .login-form section.login-form .col-md-6 .card .card-body {
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+}
