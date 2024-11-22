@@ -135,3 +135,88 @@
  .tracking main.tracking .section-tracking .icons:hover .solid-icon {
     display: block;
  }
+
+ /* ==================================== Requests Page========================== */
+ /* Action Button Drop down */
+
+
+.requests-table table tbody ul {
+    padding: 0px;
+}
+
+.requests-table table tbody .dropdown-menu .dropdown-item:hover {
+    background-color: #f6f9ff;
+    position: relative !important;
+    color: #3454a4 !important;
+}
+
+.requests-table table tbody .dropdown-menu .dropdown-item::before {
+    content: "";
+    position: absolute !important;
+    top: 0; 
+    left: 0;
+    width: 2px;
+    height: 100%;
+    display: none;
+    background-color: #3454a4;
+    transition: all 0.3s;
+}
+
+.requests-table table tbody .dropdown-menu .dropdown-item:hover::before {
+    display: block;
+}
+
+.requests-table table tbody .dropdown-menu-arrow::before {
+    display: none;
+}
+
+/* ==================================globals========================= */
+.btn-red {
+    color: #fff;
+    border-color: rgba(230,0,0, 1) !important;
+    background-color: rgba(230,0,0, 1) !important;
+    transition: all 0.4s;
+}
+.large-badge {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 450;
+    padding: 6px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.bg-lightgreen2 {
+    background-color: rgba(224, 245, 236, 1) !important;
+}
+.bg-lightblue {
+    background-color: rgba(220, 241, 254, 1) !important;
+}
+.bg-lightyellow {
+    background-color: rgba(255, 242, 217, 1) !important;
+}
+.bg-lightred1 {
+    background-color: rgba(255, 217, 217, 1) !important;
+}
+.bg-lightpurple {
+    background-color: rgba(239, 234, 250, 1) !important;
+}
+
+.text-green2 {
+    color: rgba(48, 190, 130, 1) !important;
+}
+
+.text-blue1 {
+    color: rgba(24, 160, 251, 1) !important;
+}
+
+.text-yellow {
+    color: rgba(255, 166, 0, 1) !important;
+}
+
+.text-red1 {
+    color: rgba(255, 0, 0, 1) !important;
+}
+.text-purple {
+    color: rgba(139, 92, 246, 1) !important;
+}
