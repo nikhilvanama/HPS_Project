@@ -626,7 +626,7 @@ input:-internal-autofill-selected {
 }
 
 #main, #footer {
-    width: 83%;
+    /* width: 83%; */
     left: 0;
     right: auto;
     position: relative;

@@ -62,11 +62,11 @@ const start = () => {
 const stop = () => {
   setTimeout(function () {
     confetti.stop()
-  }, 2000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+  }, 2000); // 2000 is time that after 5 second stop the confetti ( 2000 = 5 sec)
 };
 function addedsuccess() {
   start();
   stop();
 }
-// Add Employee Success Confittie
+// Add Confittie
 document.getElementById("submit-shipment").addEventListener("click", addedsuccess);

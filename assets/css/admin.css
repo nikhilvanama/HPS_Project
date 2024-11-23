@@ -164,3 +164,9 @@ table tr td.order-status .large-badge.cancelled {
     color: #fff !important;
     background-color: #3454a4 !important;
 }
+
+/* Admin Dashboard */
+
+.dashboard main.dashboard .row .requests .request:hover, .dashboard main.dashboard .row .deliveries .delivery:hover{
+    background-color: #ebeef6;
+}

@@ -72,6 +72,7 @@
   <!-- Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
   <link href="../assets/css/custom.css" rel="stylesheet">
+  <link href="../assets/css/admin.css" rel="stylesheet">
 
 </head>
 
@@ -85,7 +86,7 @@
   <!-- Main -->
   <main class="main dashboard" id="main">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg-3">
         <div class="card">
           <div class="card-body pt-3">
             <div class="row align-items-center">
@@ -100,7 +101,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg-3">
         <div class="card">
           <div class="card-body pt-3">
             <div class="row align-items-center">
@@ -115,7 +116,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg-3">
         <div class="card">
           <div class="card-body pt-3">
             <div class="row align-items-center">
@@ -130,7 +131,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg-3">
         <div class="card">
           <div class="card-body pt-3">
             <div class="row align-items-center">
@@ -151,6 +152,68 @@
         <div class="card">
           <div class="card-body">
             <div id="revenue-orders"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body pt-3">
+            <div class="head d-flex justify-content-between align-items-center mb-3">
+              <p class="fs-20 fw-500 text-darkblue">Recent Requests</p>
+              <a href="../Admin/requests.html" class="fs-14 fw-350 text-blue">view all <i class="fa-solid fa-angle-right fs-11 ms-2"></i></a>
+            </div>
+            <div class="requests">
+              <div class="request d-flex justify-content-between flex-wrap column-gap-2 align-items-center p-2 br-3 trans-03">
+                <div class="details d-flex column-gap-3 align-items-center">
+                  <div class="icon">
+                    <img src="../assets/img/image 165.svg" alt="box" height="30px">
+                  </div>
+                  <div class="info">
+                    <p class="fs-15 fw-400 text-dark">Package Delivery (10kg)</p>
+                    <div class="route d-flex align-items-center column-gap-3">
+                      <p class="fs-13 fw-350 text-grey2">Chennai</p>
+                      <i class="fa-solid fa-arrow-right-long fs-12"></i>
+                      <p class="fs-13 fw-350 text-grey2">Bangolore</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="time">
+                  <p class="fs-12 fw-350 text-grey3">2 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body pt-3">
+            <div class="head d-flex justify-content-between align-items-center mb-3">
+              <p class="fs-20 fw-500 text-darkblue">Delayed Deliveries</p>
+              <a href="../Admin/requests.html" class="fs-14 fw-350 text-blue">view all <i class="fa-solid fa-angle-right fs-11 ms-2"></i></a>
+            </div>
+            <div class="deliveries">
+              <div class="delivery d-flex justify-content-between flex-wrap column-gap-2 align-items-center p-2 br-3 trans-03">
+                <div class="details d-flex column-gap-3 align-items-center">
+                  <div class="icon">
+                    <img src="../assets/img/image 165.svg" alt="box" height="30px">
+                  </div>
+                  <div class="route d-flex align-items-center column-gap-3">
+                    <p class="fs-14 fw-400 text-grey2">Chennai</p>
+                    <i class="fa-solid fa-arrow-right-long fs-12"></i>
+                    <p class="fs-14 fw-400 text-grey2">Bangolore</p>
+                  </div>
+                </div>
+                <div class="reason d-flex column-gap-2 align-items-center">
+                  <p class="fs-14 fw-400 text-blue">No Answer</p>
+                  <a href="../Admin/awb-tracking.html" class="p-2">
+                    <img src="../assets/img/track-icon-s-b.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
