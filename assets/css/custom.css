@@ -291,6 +291,8 @@ li{list-style: none !important;}
 
 .width-100{width: 100% !important;}
 
+.height-calc{height: calc(100% - 30px);}
+
 /* Colors */
 
 .text-lightblue1{color:#ebeef6 !important;}
@@ -641,7 +643,6 @@ input:-internal-autofill-selected {
     height: 50px;
     padding-top: 15px;
     text-align: center;
-
 }
 
 /* Profile Popup */

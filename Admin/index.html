@@ -92,7 +92,7 @@
             <div class="row align-items-center">
               <div class="col-8">
                 <h5 class=" fs-16 fw-450 text-grey1">Today New Orders</h5>
-                <p class="fs-40 fw-700 text-darkblue">100</p>
+                <p class="fs-36 fw-700 text-darkblue">100</p>
               </div>
               <div class="col-4">
                 <img src="../assets/img/image 165.svg" alt="box" height="55px">
@@ -106,8 +106,8 @@
           <div class="card-body pt-3">
             <div class="row align-items-center">
               <div class="col-8">
-                <h5 class=" fs-16 fw-450 text-grey1">In Transit</h5>
-                <p class="fs-40 fw-700 text-darkblue">100</p>
+                <h5 class=" fs-16 fw-450 text-grey1">Total In Transit</h5>
+                <p class="fs-36 fw-700 text-darkblue">100</p>
               </div>
               <div class="col-4">
                 <img src="../assets/img/Delivery Truck (AI style)1.png" alt="Truck" height="55px">
@@ -121,8 +121,8 @@
           <div class="card-body pt-3">
             <div class="row align-items-center">
               <div class="col-8">
-                <h5 class=" fs-16 fw-450 text-grey1">Today Delivered</h5>
-                <p class="fs-40 fw-700 text-darkblue">100</p>
+                <h5 class=" fs-16 fw-450 text-grey1">Delivered Today</h5>
+                <p class="fs-36 fw-700 text-darkblue">100</p>
               </div>
               <div class="col-4">
                 <img src="../assets/img/Rocket.svg" alt="Rocket" height="55px">
@@ -136,8 +136,8 @@
           <div class="card-body pt-3">
             <div class="row align-items-center">
               <div class="col-8">
-                <h5 class=" fs-16 fw-450 text-grey1">Total Revenue</h5>
-                <p class="fs-40 fw-700 text-darkblue">$ 8500</p>
+                <h5 class=" fs-16 fw-450 text-grey1">Today's Revenue</h5>
+                <p class="fs-36 fw-700 text-darkblue">﷼ 8500</p>
               </div>
               <div class="col-4">
                 <img src="../assets/img/Money 3D Animated Icon (HD).png" alt="Money" height="55px">
@@ -150,21 +150,130 @@
     <div class="row">
       <div class="col-12">
         <div class="card">
-          <div class="card-body">
-            <div id="revenue-orders"></div>
+          <div class="card-body pt-3">
+            <h5 class="text-darkblue fs-22 fw-500">Reports</h5>
+
+            <!-- Line Chart -->
+            <div id="reportsChart"></div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                new ApexCharts(document.querySelector("#reportsChart"), {
+                  series: [{
+                    name: 'New Orders',
+                    data: [31, 40, 28, 51, 42, 82, 56],
+                  }, {
+                    name: 'Revenue',
+                    data: [11, 32, 45, 32, 34, 52, 41]
+                  }],
+                  chart: {
+                    height: 350,
+                    type: 'area',
+                    toolbar: {
+                      show: false
+                    },
+                  },
+                  markers: {
+                    size: 4
+                  },
+                  colors: ['#3454a4', '#2eca6a'],
+                  fill: {
+                    type: "gradient",
+                    gradient: {
+                      shadeIntensity: 1,
+                      opacityFrom: 0.3,
+                      opacityTo: 0.4,
+                      stops: [0, 90, 100]
+                    }
+                  },
+                  dataLabels: {
+                    enabled: false
+                  },
+                  stroke: {
+                    curve: 'smooth',
+                    width: 2
+                  },
+                  xaxis: {
+                    type: 'datetime',
+                    categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+                  },
+                  tooltip: {
+                    x: {
+                      format: 'dd/MM/yy HH:mm'
+                    },
+                  }
+                }).render();
+              });
+            </script>
+            <!-- End Line Chart -->
+
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row overflow-hidden">
       <div class="col-md-6">
-        <div class="card">
+        <div class="card height-calc">
           <div class="card-body pt-3">
             <div class="head d-flex justify-content-between align-items-center mb-3">
               <p class="fs-20 fw-500 text-darkblue">Recent Requests</p>
               <a href="../Admin/requests.html" class="fs-14 fw-350 text-blue">view all <i class="fa-solid fa-angle-right fs-11 ms-2"></i></a>
             </div>
-            <div class="requests">
+            <div class="requests d-flex flex-column row-gap-2">
+              <div class="request d-flex justify-content-between flex-wrap column-gap-2 align-items-center p-2 br-3 trans-03">
+                <div class="details d-flex column-gap-3 align-items-center">
+                  <div class="icon">
+                    <img src="../assets/img/image 165.svg" alt="box" height="30px">
+                  </div>
+                  <div class="info">
+                    <p class="fs-15 fw-400 text-dark">Package Delivery (10kg)</p>
+                    <div class="route d-flex align-items-center column-gap-3">
+                      <p class="fs-13 fw-350 text-grey2">Chennai</p>
+                      <i class="fa-solid fa-arrow-right-long fs-12"></i>
+                      <p class="fs-13 fw-350 text-grey2">Bangolore</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="time">
+                  <p class="fs-12 fw-350 text-grey3">2 hours ago</p>
+                </div>
+              </div>
+              <div class="request d-flex justify-content-between flex-wrap column-gap-2 align-items-center p-2 br-3 trans-03">
+                <div class="details d-flex column-gap-3 align-items-center">
+                  <div class="icon">
+                    <img src="../assets/img/image 165.svg" alt="box" height="30px">
+                  </div>
+                  <div class="info">
+                    <p class="fs-15 fw-400 text-dark">Package Delivery (10kg)</p>
+                    <div class="route d-flex align-items-center column-gap-3">
+                      <p class="fs-13 fw-350 text-grey2">Chennai</p>
+                      <i class="fa-solid fa-arrow-right-long fs-12"></i>
+                      <p class="fs-13 fw-350 text-grey2">Bangolore</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="time">
+                  <p class="fs-12 fw-350 text-grey3">2 hours ago</p>
+                </div>
+              </div>
+              <div class="request d-flex justify-content-between flex-wrap column-gap-2 align-items-center p-2 br-3 trans-03">
+                <div class="details d-flex column-gap-3 align-items-center">
+                  <div class="icon">
+                    <img src="../assets/img/image 165.svg" alt="box" height="30px">
+                  </div>
+                  <div class="info">
+                    <p class="fs-15 fw-400 text-dark">Package Delivery (10kg)</p>
+                    <div class="route d-flex align-items-center column-gap-3">
+                      <p class="fs-13 fw-350 text-grey2">Chennai</p>
+                      <i class="fa-solid fa-arrow-right-long fs-12"></i>
+                      <p class="fs-13 fw-350 text-grey2">Bangolore</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="time">
+                  <p class="fs-12 fw-350 text-grey3">2 hours ago</p>
+                </div>
+              </div>
               <div class="request d-flex justify-content-between flex-wrap column-gap-2 align-items-center p-2 br-3 trans-03">
                 <div class="details d-flex column-gap-3 align-items-center">
                   <div class="icon">
@@ -188,13 +297,85 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="card">
+        <div class="card height-calc">
           <div class="card-body pt-3">
             <div class="head d-flex justify-content-between align-items-center mb-3">
               <p class="fs-20 fw-500 text-darkblue">Delayed Deliveries</p>
               <a href="../Admin/requests.html" class="fs-14 fw-350 text-blue">view all <i class="fa-solid fa-angle-right fs-11 ms-2"></i></a>
             </div>
             <div class="deliveries">
+              <div class="delivery d-flex justify-content-between flex-wrap column-gap-2 align-items-center p-2 br-3 trans-03">
+                <div class="details d-flex column-gap-3 align-items-center">
+                  <div class="icon">
+                    <img src="../assets/img/image 165.svg" alt="box" height="30px">
+                  </div>
+                  <div class="route d-flex align-items-center column-gap-3">
+                    <p class="fs-14 fw-400 text-grey2">Chennai</p>
+                    <i class="fa-solid fa-arrow-right-long fs-12"></i>
+                    <p class="fs-14 fw-400 text-grey2">Bangolore</p>
+                  </div>
+                </div>
+                <div class="reason d-flex column-gap-2 align-items-center">
+                  <p class="fs-14 fw-400 text-blue">No Answer</p>
+                  <a href="../Admin/awb-tracking.html" class="p-2">
+                    <img src="../assets/img/track-icon-s-b.svg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="delivery d-flex justify-content-between flex-wrap column-gap-2 align-items-center p-2 br-3 trans-03">
+                <div class="details d-flex column-gap-3 align-items-center">
+                  <div class="icon">
+                    <img src="../assets/img/image 165.svg" alt="box" height="30px">
+                  </div>
+                  <div class="route d-flex align-items-center column-gap-3">
+                    <p class="fs-14 fw-400 text-grey2">Chennai</p>
+                    <i class="fa-solid fa-arrow-right-long fs-12"></i>
+                    <p class="fs-14 fw-400 text-grey2">Bangolore</p>
+                  </div>
+                </div>
+                <div class="reason d-flex column-gap-2 align-items-center">
+                  <p class="fs-14 fw-400 text-blue">No Answer</p>
+                  <a href="../Admin/awb-tracking.html" class="p-2">
+                    <img src="../assets/img/track-icon-s-b.svg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="delivery d-flex justify-content-between flex-wrap column-gap-2 align-items-center p-2 br-3 trans-03">
+                <div class="details d-flex column-gap-3 align-items-center">
+                  <div class="icon">
+                    <img src="../assets/img/image 165.svg" alt="box" height="30px">
+                  </div>
+                  <div class="route d-flex align-items-center column-gap-3">
+                    <p class="fs-14 fw-400 text-grey2">Chennai</p>
+                    <i class="fa-solid fa-arrow-right-long fs-12"></i>
+                    <p class="fs-14 fw-400 text-grey2">Bangolore</p>
+                  </div>
+                </div>
+                <div class="reason d-flex column-gap-2 align-items-center">
+                  <p class="fs-14 fw-400 text-blue">No Answer</p>
+                  <a href="../Admin/awb-tracking.html" class="p-2">
+                    <img src="../assets/img/track-icon-s-b.svg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="delivery d-flex justify-content-between flex-wrap column-gap-2 align-items-center p-2 br-3 trans-03">
+                <div class="details d-flex column-gap-3 align-items-center">
+                  <div class="icon">
+                    <img src="../assets/img/image 165.svg" alt="box" height="30px">
+                  </div>
+                  <div class="route d-flex align-items-center column-gap-3">
+                    <p class="fs-14 fw-400 text-grey2">Chennai</p>
+                    <i class="fa-solid fa-arrow-right-long fs-12"></i>
+                    <p class="fs-14 fw-400 text-grey2">Bangolore</p>
+                  </div>
+                </div>
+                <div class="reason d-flex column-gap-2 align-items-center">
+                  <p class="fs-14 fw-400 text-blue">No Answer</p>
+                  <a href="../Admin/awb-tracking.html" class="p-2">
+                    <img src="../assets/img/track-icon-s-b.svg" alt="">
+                  </a>
+                </div>
+              </div>
               <div class="delivery d-flex justify-content-between flex-wrap column-gap-2 align-items-center p-2 br-3 trans-03">
                 <div class="details d-flex column-gap-3 align-items-center">
                   <div class="icon">
@@ -228,5 +409,4 @@
   <script src="../assets/js/custom.js"></script>
 
 </body>
-
 </html>
