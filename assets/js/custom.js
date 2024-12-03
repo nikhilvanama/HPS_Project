@@ -18,15 +18,15 @@ jQuery(document).ready(function () {
     });
 
   //Customers Search JS
-  $('.customers-table #customers-search').on('keyup', function () {
-    var searchinput = $('.customers-table #customers-search').val();
+  $('.customers-table #customers_search').on('keyup', function () {
+    var searchinput = $('.customers-table #customers_search').val();
     $('.customers-table .table-responsive .dt-search input').val(searchinput);
-    $('.customers-table .table-responsive .dt-search input').trigger('search')
+    $('.customers-table .table-responsive .dt-search input').trigger('search');
   })
 
   //Orders Search JS
-  $('.orders-table #customers-search').on('keyup', function () {
-    var searchinput = $('.orders-table #customers-search').val();
+  $('.orders-table #orders_search').on('keyup', function () {
+    var searchinput = $('.orders-table #orders_search').val();
     $('.orders-table .table-responsive .dt-search input').val(searchinput);
     $('.orders-table .table-responsive .dt-search input').trigger('search')
   })
