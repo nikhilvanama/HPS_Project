@@ -244,3 +244,147 @@ body::before{
     background-color: rgba(153,152,151,0.25);
     z-index: 0;
 }
+
+/* Success Msg popup icon CSS */
+
+.success-msg-popup .modal-content.order-success .modal-body .status-text .failed {
+    display: none;
+}
+
+.success-msg-popup .modal-content.order-failed .modal-body .status-text .success {
+    display: none;
+}
+
+.success-msg-popup .modal-content.order-success::before{
+    content: "";
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 215px;
+    background-color: #E6F6EC;
+    border-radius: 0px 0px 1500px 1500px;
+    z-index: 1;
+}
+
+.success-msg-popup .modal-content.order-failed::before{
+    content: "";
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 215px;
+    background-color: #FFEEEA;
+    border-radius: 0px 0px 1500px 1500px;
+    z-index: 1;
+}
+
+.success-msg-popup .modal-content.order-failed i.fa-solid {
+    position: absolute;
+    top: 24px;
+    left: 47%;
+    z-index: 3;
+}
+
+.success-msg-popup .modal-content.order-success i.fa-solid {
+    position: absolute;
+    top: 24px;
+    left: 46.5%;
+    z-index: 3;
+}
+
+.success-msg-popup .modal-content.order-failed i.fa-solid.fa-check {
+    display: none;
+}
+
+.success-msg-popup .modal-content.order-success i.fa-solid.fa-xmark {
+    display: none;
+}
+
+/* Success */
+
+.success-msg-popup .modal-content.order-success .status-msg-icon {
+    position: relative;
+    top: 40px;
+    left: 50%;
+    border-radius: 50%;
+    height: 96px;
+    width: 96px;
+    animation: rotate_3922 1.2s linear infinite;
+    background-color: #006527;
+    background-image: linear-gradient(#006527, #00A841, #30BE82);
+    z-index: 2;
+}
+  
+.success-msg-popup .modal-content.order-success .status-msg-icon span {
+    position: absolute;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: #006527;
+    background-image: linear-gradient(#006527, #00A841, #30BE82);
+}
+
+/* Failed */
+
+.success-msg-popup .modal-content.order-failed .status-msg-icon {
+    position: relative;
+    top: 40px;
+    left: 50%;
+    border-radius: 50%;
+    height: 96px;
+    width: 96px;
+    animation: rotate_3922 1.2s linear infinite;
+    background-color: #730000;
+    background-image: linear-gradient(#730000, #FF0000, #FF5630);
+    z-index: 2;
+}
+  
+.success-msg-popup .modal-content.order-failed .status-msg-icon span {
+    position: absolute;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: #730000;
+    background-image: linear-gradient(#730000, #FF0000, #FF5630);
+}
+  
+.success-msg-popup .status-msg-icon span:nth-of-type(1) {
+    filter: blur(5px);
+}
+  
+.success-msg-popup .status-msg-icon span:nth-of-type(2) {
+    filter: blur(10px);
+}
+  
+.success-msg-popup .status-msg-icon span:nth-of-type(3) {
+    filter: blur(25px);
+}
+  
+.success-msg-popup .status-msg-icon span:nth-of-type(4) {
+    filter: blur(50px);
+}
+  
+.success-msg-popup .status-msg-icon::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    border: solid 5px #ffffff;
+    border-radius: 50%;
+}
+  
+@keyframes rotate_3922 {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
